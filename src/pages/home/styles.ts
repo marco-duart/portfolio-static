@@ -333,6 +333,27 @@ export const IconBlock = styled.a`
     height: 40px;
     color: ${(props) => props.theme.colors.primary};
   }
+
+  @media ${CONSTANTS.DEVICE.mobileS} {
+    ${StyledIconBase} {
+      width: 20px;
+      height: 20px;
+    }
+
+    div {
+      font-size: 0.75rem;
+    }
+  }
+  @media ${CONSTANTS.DEVICE.tablet} {
+    ${StyledIconBase} {
+      width: 40px;
+      height: 40px;
+    }
+
+    div {
+      font-size: 1.25rem;
+    }
+  }
 `;
 
 export const PortfolioCardContainer = styled.div`

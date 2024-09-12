@@ -143,9 +143,18 @@ export const FooterList = styled.div`
     font-family: ${(props) => props.theme.fonts.openSans};
     color: ${(props) => props.theme.colors.white};
   }
-  div {
-    width: 40px;
-    height: 40px;
+
+  @media ${CONSTANTS.DEVICE.mobileS} {
+    div {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  @media ${CONSTANTS.DEVICE.tablet} {
+    div {
+      width: 40px;
+      height: 40px;
+    }
   }
 `;
 
@@ -166,6 +175,9 @@ export const FooterEnd = styled.div`
   @media ${CONSTANTS.DEVICE.mobileS} {
     justify-content: center;
 
+    span {
+      font-size: 0.75rem;
+    }
     #rules {
       display: none;
     }
@@ -174,6 +186,9 @@ export const FooterEnd = styled.div`
     justify-content: space-between;
     gap: 2rem;
 
+    span {
+      font-size: 1rem;
+    }
     #rules {
       display: flex;
       gap: 20px;
