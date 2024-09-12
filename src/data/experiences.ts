@@ -6,7 +6,7 @@ export const experiences = [
     startDate: new Date("2017-12-11T00:00:00-03:00"),
     endDate: new Date("2019-06-11T00:00:00-03:00"),
     description:
-      "Trabalhava como suporte técnico e relacionamento para clientes grandes contas da Claro, auxiliando e realizando manutenção em linhas M2M/Telemetria. Meu contato com o cliente podia ser tanto por telefone quanto por e-mail registrando todas as ações no protocolo e acompanhando os mesmos, podendo encaminhar para outras áreas.Trabalhava como suporte técnico e relacionamento para clientes grandes contas da Claro, auxiliando e realizando manutenção em linhas M2M/Telemetria. Meu contato com o cliente podia ser tanto por telefone quanto por e-mail registrando todas as ações no protocolo e acompanhando os mesmos, podendo encaminhar para outras áreas.",
+      "Atuava como suporte técnico e no relacionamento com grandes contas da Claro, oferecendo assistência e manutenção em linhas M2M/Telemetria. O contato com os clientes ocorria por telefone ou e-mail, registrando todas as interações e ações no sistema. Acompanhava os processos até a resolução, e quando necessário, encaminhava para outras áreas.",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const experiences = [
     startDate: new Date("2019-10-07T00:00:00-03:00"),
     endDate: new Date("2020-03-09T00:00:00-03:00"),
     description:
-      "Auxiliava os técnicos cuidando da área sistêmica e burocrática de contratos executados ou liberados. Realizava callback e acompanhamento dos clientes antes, durante e após a instalação. Registrava informações e fechar contratos com o status correto no sistema. Prezava para que os técnicos alcancem todos os indicativos. Sinalizaza os líderes dos técnicos sobre qualquer desvio do padrão quanto ao serviço dos técnicos. Sinalizava sobre técnicos fora da meta. Realizava relatórios de produtividade, OS, dentre outros.",
+      "Prestava suporte aos técnicos na parte administrativa e burocrática dos contratos. Realizava o acompanhamento dos clientes antes, durante e após a instalação, registrando informações e fechando contratos no sistema com o status correto. Monitorava o cumprimento das metas dos técnicos e relatava qualquer desvio para os supervisores, além de elaborar relatórios de produtividade e ordens de serviço.",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const experiences = [
     startDate: new Date("2020-09-21T00:00:00-03:00"),
     endDate: new Date("2021-04-25T00:00:00-03:00"),
     description:
-      "Como monitor de tele atendimento, estive mais próximo dos agentes onde desenvolvi habilidades para lidar com pessoas e suas características. Dentre as funções tinha, realizar monitoria e feedback, Acompanhar os agentes e seus indicadores, Auxiliar em dúvidas referente ao processo, Promover campanhas e projetos incentivando o desenvolvimento da operação, Auxiliar o instrutor(a) com os treinamentos, desenvolver materiais para auxilio da operação.Como monitor de tele atendimento, estive mais próximo dos agentes onde desenvolvi habilidades para lidar com pessoas e suas características. Dentre as funções tinha, realizar monitoria e feedback, Acompanhar os agentes e seus indicadores, Auxiliar em dúvidas referente ao processo, Promover campanhas e projetos incentivando o desenvolvimento da operação, Auxiliar o instrutor(a) com os treinamentos, desenvolver materiais para auxilio da operação.",
+      "Como monitor de atendimento, desenvolvi habilidades interpessoais, lidando diretamente com os agentes. Minhas funções incluíam monitorar o atendimento, fornecer feedback, acompanhar os indicadores de desempenho, esclarecer dúvidas sobre processos, promover campanhas e projetos para melhoria operacional, além de auxiliar os instrutores em treinamentos e desenvolver materiais de apoio.",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const experiences = [
     startDate: new Date("2021-04-25T00:00:00-03:00"),
     endDate: new Date("2022-03-18T00:00:00-03:00"),
     description:
-      "Atuei ministrando palestras, treinamentos iniciais/integração e treinamentos de reciclagem (mensal). Desenvolvi materiais didádicos. Ajudei na definição e atualização dos procedimentos do cliente interno. Apliquei avaliação trimestral na operação.",
+      "Ministrei palestras e treinamentos de integração e reciclagem (mensais). Desenvolvi materiais didáticos e participei na definição e atualização de procedimentos internos. Também realizei avaliações trimestrais na operação para medir a efetividade dos processos.",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const experiences = [
     startDate: new Date("2022-03-18T00:00:00-03:00"),
     endDate: new Date("2022-06-20T00:00:00-03:00"),
     description:
-      "Realizava a manutenção e configuração de computadores, Direcionar chamados conforme a demanda, Realizava a troca de periféricos, Realizava suporte através de acesso remoto, Realizar o controle de entrada e saída de equipamentos, Solicitar equipamentos conforme necessidade, Realizava a criação de acessos para o sistema interno, Realizava o reset de acessos, Disponibilizava EPI's para os operadores,",
+      "Realizava manutenção e configuração de computadores, encaminhava chamados conforme demanda e trocava periféricos. Prestava suporte via acesso remoto, controlava o fluxo de entrada e saída de equipamentos, solicitava novos equipamentos conforme a necessidade e gerenciava a criação e reset de acessos para o sistema interno. Também era responsável pela distribuição de EPIs para os operadores.",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const experiences = [
     startDate: new Date("2022-06-22T00:00:00-03:00"),
     endDate: new Date("2022-08-15T00:00:00-03:00"),
     description:
-      "Atuei na supervisão dos setores comercial, suporte técnico e financeiro. Auxiliava os colaboradores nas demandas críticas. Participava de plantões. Acompanhava os indicadores e mantinha os relatórios atualizados. Realizar os feedback's com os agentes. Realizava o treinamento para novos agentes. Orientava os operadores nos casos atípicos do atendimento.",
+      "Supervisionava os setores comercial, técnico e financeiro, oferecendo suporte aos colaboradores em demandas críticas. Participava de plantões, acompanhava os indicadores e mantinha relatórios atualizados. Realizava feedbacks com os agentes e treinava novos colaboradores, além de orientar os operadores em casos atípicos de atendimento.",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const experiences = [
     startDate: new Date("2022-08-21T00:00:00-03:00"),
     endDate: new Date("2023-09-30T00:00:00-03:00"),
     description:
-      "Realizava monitoria e feedback. Alimentava o relatório de monitorias. Encaminhava o relatório de pendencias de monitoria. Auxiliava em dúvidas referente ao processo. Prezava para que o fluxo do processo seja seguido conforme ISO9001 e participava de reuniões de melhoria da monitoria.",
+      "Realizava monitorias e feedbacks, alimentava relatórios de monitoria e encaminhava relatórios de pendências. Auxiliava nas dúvidas relacionadas ao processo e assegurava o cumprimento das normas ISO9001. Participava de reuniões de melhoria contínua da monitoria.",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ export const experiences = [
     startDate: new Date("2023-10-01T00:00:00-03:00"),
     endDate: new Date("2023-12-31T00:00:00-03:00"),
     description:
-      "Desenvolvo soluções para as aplicações da empresa com um foco em ambiente de sustentação. Desenvolvo novas aplicações conforme demanda dos departamentos. Monitoro e providencio resoluções para bugs.",
+      "Desenvolvo soluções para aplicações da empresa, com foco em sustentação. Crio novas aplicações conforme a demanda dos departamentos e monitoro e resolvo bugs no sistema.",
   },
   {
     id: 9,
@@ -78,6 +78,6 @@ export const experiences = [
     startDate: new Date("2024-01-01T00:00:00-03:00"),
     endDate: undefined,
     description:
-      "Desenvolvo soluções para as aplicações da empresa com um foco em ambiente de sustentação. Desenvolvo novas aplicações conforme demanda dos departamentos. Monitoro e providencio resoluções para bugs.",
+      "Desenvolvo soluções para as aplicações da empresa, com foco em sustentação. Crio novas aplicações conforme a demanda dos departamentos e monitoro e resolvo bugs no sistema.",
   },
 ];
