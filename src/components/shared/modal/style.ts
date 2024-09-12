@@ -28,7 +28,7 @@ export const ModalContainer = styled.div`
   }
   @media ${CONSTANTS.DEVICE.tablet} {
     width: 85%;
-    height: 70%;
+    height: 80%;
   }
   @media ${CONSTANTS.DEVICE.desktop} {
   }

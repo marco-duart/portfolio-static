@@ -15,6 +15,7 @@ const SIZES = {
   mobileL: '425px',
   tablet: '768px',
   desktop: '1024px',
+  fullHd: '1920px',
 };
 
 export const DEVICE = {
@@ -23,6 +24,7 @@ export const DEVICE = {
   mobileL: `(min-width: ${SIZES.mobileL})`,
   tablet: `(min-width: ${SIZES.tablet})`,
   desktop: `(min-width: ${SIZES.desktop})`,
+  fullHd: `(min-width: ${SIZES.fullHd})`,
 };
 
 export const IMAGES = {

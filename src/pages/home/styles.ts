@@ -355,8 +355,6 @@ export const PortfolioCardContainer = styled.div`
 `;
 
 export const PortfolioCardWrapper = styled.div`
-  width: 320px;
-  height: 230px;
   background-image: linear-gradient(
     163deg,
     ${(props) => props.theme.colors.primary} 0%,
@@ -369,11 +367,18 @@ export const PortfolioCardWrapper = styled.div`
   &:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
   }
+
+  @media ${CONSTANTS.DEVICE.mobileS} {
+    width: 220px;
+    height: 158px;
+  }
+  @media ${CONSTANTS.DEVICE.fullHd} {
+    width: 320px;
+    height: 230px;
+  }
 `;
 
 export const PortfolioCard = styled.div`
-  width: 320px;
-  height: 230px;
   background-color: #1a1a1a;
   border-radius: 10px;
   transition: all 0.2s;
@@ -394,6 +399,15 @@ export const PortfolioCard = styled.div`
   &:hover {
     transform: scale(0.98);
     border-radius: 20px;
+  }
+
+  @media ${CONSTANTS.DEVICE.mobileS} {
+    width: 220px;
+    height: 158px;
+  }
+  @media ${CONSTANTS.DEVICE.fullHd} {
+    width: 320px;
+    height: 230px;
   }
 `;
 
