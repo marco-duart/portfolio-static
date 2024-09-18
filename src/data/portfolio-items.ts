@@ -239,4 +239,39 @@ export const portfolioItems = [
       },
     ],
   },
+  {
+    id: 9,
+    name: "Porto Club Barbershop",
+    description:
+      "Este projeto implementa um website de barbearia com foco em uma interface responsiva, transições suaves e uma navegação interativa baseada em rolagem.",
+    technologies:
+      "REACT;VITE;JAVASCRIPT;TYPESCRIPT;FRAMER-MOTION;HOOKS;STYLED-COMPONENTS;REACT-SCROLL",
+    link: "https://github.com/marco-duart/porto-club-barbershop",
+    photos: [
+      {
+        id: 40,
+        photoUrl: "/assets/projects/9/portoclub-0.png",
+      },
+      {
+        id: 41,
+        photoUrl: "/assets/projects/9/portoclub-1.png",
+      },
+      {
+        id: 42,
+        photoUrl: "/assets/projects/9/portoclub-2.png",
+      },
+      {
+        id: 43,
+        photoUrl: "/assets/projects/9/portoclub-3.png",
+      },
+      {
+        id: 44,
+        photoUrl: "/assets/projects/9/portoclub-4.png",
+      },
+      {
+        id: 45,
+        photoUrl: "/assets/projects/9/portoclub-5.png",
+      },
+    ],
+  },
 ];
