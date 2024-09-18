@@ -16,15 +16,8 @@ export const Skills: React.FC<Props> = ({ skills }) => {
     setActiveSection((prev) => (prev === section ? null : section));
   };
 
-  const bgColor =
-    activeSection === "front"
-      ? "#ff4d4d"
-      : activeSection === "back"
-      ? "#007bff"
-      : undefined;
-
   return (
-    <S.SkillsContainer bgColor={bgColor}>
+    <S.SkillsContainer activeSection={activeSection}>
       <S.TitleContainer>
         <S.Title>Habilidades</S.Title>
       </S.TitleContainer>
@@ -80,6 +73,9 @@ export const Skills: React.FC<Props> = ({ skills }) => {
           </S.SkillsInfo>
         )}
       </S.SkillsImageContainer>
+      {activeSection === null && (
+        <S.HintText>Clique nas imagens para explorar!</S.HintText>
+      )}
       <hr />
     </S.SkillsContainer>
   );

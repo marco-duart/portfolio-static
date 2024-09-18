@@ -27,11 +27,17 @@ export const Container = styled.div`
   }
 `;
 
-export const SkillsContainer = styled.div<{ bgColor?: string }>`
+export const SkillsContainer = styled.div<{
+  activeSection: "front" | "back" | null;
+}>`
   width: 100vw;
   height: 92vh;
   background-color: ${(props) =>
-    props.bgColor ? props.bgColor : props.theme.colors.secundary};
+    props.activeSection === "front"
+      ? "#ff4d4d"
+      : props.activeSection === "back"
+      ? "#007bff"
+      : props.theme.colors.secundary};
   overflow: hidden;
   padding: 2rem 0;
 
@@ -43,8 +49,6 @@ export const SkillsContainer = styled.div<{ bgColor?: string }>`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
   }
 `;
 
@@ -207,6 +211,15 @@ export const SkillsImageContainer = styled.div`
   overflow: hidden;
 `;
 
+export const HintText = styled.p`
+  color: ${(props) => props.theme.colors.white};
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+  text-align: center;
+`;
+
 export const SkillsImageWrapper = styled(motion.div)<{
   side: "left" | "right";
   active: boolean;
@@ -217,21 +230,21 @@ export const SkillsImageWrapper = styled(motion.div)<{
   bottom: 0;
   width: 100%;
   height: 100%;
-  ${(props) => (props.side === "left" ? "left: 0;" : "right: 0;")}
-  clip-path: ${(props) =>
-    props.active
+  ${({ side }) => (side === "left" ? "left: 0;" : "right: 0;")}
+  clip-path: ${({ active, initialState, side }) =>
+    active
       ? "inset(0 0 0 0)"
-      : props.initialState
-      ? props.side === "left"
+      : initialState
+      ? side === "left"
         ? "inset(0 50% 0 0)"
         : "inset(0 0 0 50%)"
       : "inset(0 100% 0 0)"};
-  transform: ${(props) =>
-    props.active
-      ? `translateX(${props.side === "left" ? "-30%" : "30%"}) scale(1)`
+  transform: ${({ active, side }) =>
+    active
+      ? `translateX(${side === "left" ? "-30%" : "30%"}) scale(1)`
       : "translateX(0%) scale(1)"};
   transition: transform 0.3s ease, clip-path 0.3s ease;
-  z-index: ${(props) => (props.active ? 2 : 1)};
+  z-index: ${({ active }) => (active ? 2 : 1)};
 `;
 
 export const SkillsImage = styled.img`
