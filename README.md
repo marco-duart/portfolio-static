@@ -1,5 +1,4 @@
-
-# portfolio-static
+# Portfolio-Static
 
 Bem-vindo ao repositório do meu portfólio pessoal, desenvolvido com foco em destacar minhas habilidades como Desenvolvedor Fullstack. Este projeto foi construído utilizando tecnologias modernas e segue as melhores práticas de desenvolvimento para garantir uma experiência fluida e interativa para os usuários.
 
