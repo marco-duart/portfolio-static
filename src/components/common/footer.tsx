@@ -32,7 +32,7 @@ const Footer = () => {
                 <LinkedinSquare />
               </div>
             </a>
-            <a href={user?.google} target="_blank">
+            <a href={`mailto:${user?.google}`} target="_blank">
               <div>
                 <Google />
               </div>
