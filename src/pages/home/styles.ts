@@ -397,7 +397,7 @@ export const PortfolioCardContainer = styled.div`
   }
 
   &::-webkit-scrollbar-track {
-    background: ${props => props.theme.colors.secundary};
+    background-color: ${props => props.theme.colors.secundary};
   }
 
   @media ${CONSTANTS.DEVICE.mobileS} {
