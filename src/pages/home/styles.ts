@@ -380,10 +380,27 @@ export const PortfolioCardContainer = styled.div`
   display: flex;
   gap: 1rem 2rem;
   margin-top: 2rem;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
 
   @media ${CONSTANTS.DEVICE.mobileS} {
     flex-wrap: nowrap;
-    overflow: scroll;
   }
   @media ${CONSTANTS.DEVICE.tablet} {
     justify-content: center;
@@ -489,14 +506,29 @@ export const CarouselSection = styled.div`
   align-items: center;
   padding: 20px;
 
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
   @media ${CONSTANTS.DEVICE.mobileS} {
     max-width: 98%;
   }
   @media ${CONSTANTS.DEVICE.tablet} {
     max-width: 60%;
     max-height: 80%;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
   }
 `;
 
