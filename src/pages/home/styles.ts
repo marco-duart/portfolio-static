@@ -384,6 +384,7 @@ export const PortfolioCardContainer = styled.div`
 
   &::-webkit-scrollbar {
     height: 8px;
+    width: 4px;
   }
   
   &::-webkit-scrollbar-thumb {
@@ -396,7 +397,7 @@ export const PortfolioCardContainer = styled.div`
   }
 
   &::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: ${props => props.theme.colors.primary};
   }
 
   @media ${CONSTANTS.DEVICE.mobileS} {
