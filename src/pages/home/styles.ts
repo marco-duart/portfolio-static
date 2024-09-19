@@ -211,6 +211,12 @@ export const SkillsImageContainer = styled.div`
   overflow: hidden;
 `;
 
+export const SkillsTitleContainer = styled.div`
+  height: 15%;
+  display: flex;
+  align-items: flex-end;
+`;
+
 export const HintText = styled.p`
   color: ${(props) => props.theme.colors.white};
   font-size: 1rem;

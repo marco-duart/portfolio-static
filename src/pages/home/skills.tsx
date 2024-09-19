@@ -18,9 +18,9 @@ export const Skills: React.FC<Props> = ({ skills }) => {
 
   return (
     <S.SkillsContainer activeSection={activeSection}>
-      <S.TitleContainer>
+      <S.SkillsTitleContainer>
         <S.Title>Habilidades</S.Title>
-      </S.TitleContainer>
+      </S.SkillsTitleContainer>
       <S.SkillsImageContainer>
         <S.SkillsImageWrapper
           side="left"
