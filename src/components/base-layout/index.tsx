@@ -16,11 +16,9 @@ const BaseLayout = () => {
     <S.Container>
       <div>
         <Header />
-        <hr />
       </div>
       <S.ContentSection>
         <Outlet />
-        <hr />
       </S.ContentSection>
       <div>
         <Footer />
