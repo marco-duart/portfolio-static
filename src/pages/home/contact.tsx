@@ -44,7 +44,6 @@ export const Contact: React.FC<Props> = ({ user }) => {
           </div>
         </S.TextContainer>
       </S.FlexContainer>
-      <hr />
     </S.Container>
   );
 };

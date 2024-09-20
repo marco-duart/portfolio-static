@@ -76,7 +76,6 @@ export const Skills: React.FC<Props> = ({ skills }) => {
       {activeSection === null && (
         <S.HintText>Clique nas imagens para explorar!</S.HintText>
       )}
-      <hr />
     </S.SkillsContainer>
   );
 };
