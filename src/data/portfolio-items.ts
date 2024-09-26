@@ -274,4 +274,49 @@ export const portfolioItems = [
       },
     ],
   },
+  {
+    id: 10,
+    name: "Quali-Track Server",
+    description:
+      "Este projeto implementa um sistema de acompanhamento e gestão de avaliações por equipe, permitindo controle completo de assinaturas, relatórios e monitorias de performance. Este é o repositório do servidor.",
+    technologies:
+      "RUBY-ON-RAILS;SIDEKIT;DEVISE;CANCANCAN;ACTIVEADMIN;ACTIVE-MODEL-SERIALIZERS;RSPEC-RAILS",
+    link: "https://github.com/marco-duart/quali-track-server",
+    photos: [
+      {
+        id: 46,
+        photoUrl: "/assets/projects/new-project.png",
+      },
+    ],
+  },
+  {
+    id: 11,
+    name: "Quali-Track Web",
+    description:
+      "Este projeto implementa um sistema de acompanhamento e gestão de avaliações por equipe, permitindo controle completo de assinaturas, relatórios e monitorias de performance. Este é o repositório da aplicação web.",
+    technologies:
+      "NEXT-JS;REACT;JAVASCRIPT;TYPESCRIPT;CHAKRA-UI;EMOTION;AXIOS;FRAMER-MOTION;NEXT-AUTH;REACT-HOOK-FORM;REACT-ICONS;REACT-QUERY;YUP;ZUSTAND",
+    link: "https://github.com/marco-duart/quali-track-web",
+    photos: [
+      {
+        id: 47,
+        photoUrl: "/assets/projects/new-project.png",
+      },
+    ],
+  },
+  {
+    id: 12,
+    name: "Quali-Track Mobile",
+    description:
+      "Este projeto implementa um sistema de acompanhamento e gestão de avaliações por equipe, permitindo controle completo de assinaturas, relatórios e monitorias de performance. Este é o repositório da aplicação mobile.",
+    technologies:
+      "REACT-NATIVE;EXPO;TYPESCRIPT;JAVASCRIPT;REACT-NATIVE-COOKIES;REACT-NAVIGATION;REDUX;REDUX-TOOLKIT;AXIOS;REACT-HOOK-FORM;YUP",
+    link: "https://github.com/marco-duart/quali-track-mobile",
+    photos: [
+      {
+        id: 47,
+        photoUrl: "/assets/projects/new-project.png",
+      },
+    ],
+  },
 ];
