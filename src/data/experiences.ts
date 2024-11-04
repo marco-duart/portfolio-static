@@ -65,17 +65,8 @@ export const experiences = [
   {
     id: 8,
     companyName: "Instituto Brasileiro de Coaching",
-    role: "Auxiliar de Desenvolvimento",
+    role: "Analista de Desenvolvimento Pleno",
     startDate: new Date("2023-10-01T00:00:00-03:00"),
-    endDate: new Date("2023-12-31T00:00:00-03:00"),
-    description:
-      "Desenvolvo soluções para aplicações da empresa, com foco em sustentação. Crio novas aplicações conforme a demanda dos departamentos e monitoro e resolvo bugs no sistema.",
-  },
-  {
-    id: 9,
-    companyName: "Instituto Brasileiro de Coaching",
-    role: "Analista de Desenvolvimento",
-    startDate: new Date("2024-01-01T00:00:00-03:00"),
     endDate: undefined,
     description:
       "Desenvolvo soluções para as aplicações da empresa, com foco em sustentação. Crio novas aplicações conforme a demanda dos departamentos e monitoro e resolvo bugs no sistema.",
