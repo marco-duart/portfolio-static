@@ -52,7 +52,7 @@ const Footer = () => {
       </S.FooterContent>
       <S.FooterEnd>
         <span>
-          &copy; {year} - Marco Aurélio. Todos os
+          &copy; 2024 - {year} - Marco Aurélio. Todos os
           direitos reservados
         </span>
         <span id="rules">
