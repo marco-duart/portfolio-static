@@ -14,10 +14,11 @@ export const educations: Education[] = [
   {
     id: 2,
     institutionName: "Faculdade Descomplica",
-    degree: "Análise e Desenvolvimento de Software",
+    degree: "Ciencia da Computação",
     degreeLevel: EducationDegreeEnum.HIGHER_EDUCATION,
-    startDate: new Date("2024-08-01T00:00:00-03:00"),
+    startDate: new Date("2024-10-27T00:00:00-03:00"),
     endDate: undefined,
-    description: "Curso superior tecnologo com o foco em desenvolvimento de software.",
+    description:
+      "Curso superior bacharelado com o foco em desenvolvimento de software.",
   },
 ];
