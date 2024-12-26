@@ -15,7 +15,7 @@ export const user: User = {
   google: "marcoaureliodarkangel@gmail.com",
   youtube: "https://www.youtube.com/@marco-duart",
   facebook: "",
-  address: "Rua SV-04, nº 27, Sonho Verder, Senador Canedo - GO. 75.260-710",
+  address: "Rua SV-04, nº 27, Sonho Verde, Senador Canedo - GO. 75.260-710",
   bioTitle: "Desenvolvedor FullStack",
   bio: "Desenvolvedor Fullstack com mais de 2 anos de experiência prática em projetos desafiadores. Possuo forte conhecimento em linguagens como JavaScript e Ruby, e frameworks modernos como NestJS, React e Rails. Minha paixão por tecnologia é alimentada por um desejo contínuo de aprender e evoluir, sempre buscando aplicar e expandir minhas habilidades em desenvolvimento de software. Estou em busca de oportunidades que me permitam contribuir de forma significativa e crescer como profissional.",
 };
