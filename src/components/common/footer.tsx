@@ -16,7 +16,6 @@ import { useUserBio } from "../../hooks";
 
 const Footer = () => {
   const { user } = useUserBio()
-  const year = new Date().getFullYear();
   return (
     <S.Footer>
       <S.FooterContent>
