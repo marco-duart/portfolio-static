@@ -6,10 +6,11 @@ import { AboutMe } from "./about-me";
 import { Contact } from "./contact";
 import { Portfolio } from "./portfolio";
 import { Skills } from "./skills";
+import { Profile } from "./profile";
 
 export const Home: React.FC = () => {
   const location = useLocation();
-  const { user, skills } = useUserBio();
+  const { user, skills, profile } = useUserBio();
   const { portfolioItems } = useGetPortfolioItem();
 
   useEffect(() => {
@@ -33,6 +34,10 @@ export const Home: React.FC = () => {
     <div>
       <section id="about">
         <AboutMe user={user} />
+      </section>
+      <hr />
+      <section id="profile">
+        <Profile profileData={profile} />
       </section>
       <hr />
       <section id="skills">
