@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { PortfolioItem } from "../../models/portfolio-item";
 import { PortfolioPhoto } from "../../models/portfolio-photo";
-import { portfolioItems } from "../../data/index"
+import { portfolioItems } from "../../data/index";
 
 type State = {
   portfolioItems: undefined | (PortfolioItem & { photos: PortfolioPhoto[] })[];
