@@ -5,6 +5,10 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import * as CONSTANTS from "../../utils/constants/constants";
 
+interface ActiveProps {
+  active?: boolean;
+}
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -486,4 +490,85 @@ export const StyledCarousel = styled(Carousel)`
     visibility: visible !important;
     background-color: #85858589 !important;
   }
+`;
+
+export const ProfileGrid = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+`;
+
+export const ProfileCard = styled.div<ActiveProps>`
+  display: flex;
+  align-items: center;
+  background-color: ${(props) => props.theme.colors.tertiary};
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  width: ${({ active }) => (active ? "400px" : "200px")};
+  height: 200px;
+
+  &:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 117, 0.4);
+  }
+`;
+
+export const ProfileImageWrapper = styled.div`
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid ${(props) => props.theme.colors.primary};
+  flex-shrink: 0;
+`;
+
+export const ProfileImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+export const ProfileInfo = styled.div<ActiveProps>`
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  opacity: ${({ active }) => (active ? 1 : 0)};
+  width: ${({ active }) => (active ? "auto" : "0")};
+  transition: opacity 0.3s ease, width 0.3s ease;
+`;
+
+export const ProfileName = styled.h4`
+  color: ${(props) => props.theme.colors.white};
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+`;
+
+export const ProfileCode = styled.span`
+  color: ${(props) => props.theme.colors.primary};
+  font-size: 1rem;
+  font-weight: bold;
+`;
+
+export const ProfileDescription = styled.p`
+  color: ${(props) => props.theme.colors.white};
+  font-size: 0.875rem;
+  margin: 0.5rem 0 0 0;
+`;
+
+export const TipText = styled.p`
+  color: ${(props) => props.theme.colors.white};
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 2rem;
+  opacity: 0.7;
+  text-align: center;
 `;
