@@ -21,16 +21,11 @@ export const ModalContainer = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  width: 85%;
+  height: 50%;
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    width: 85%;
-    height: 50%;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
-    width: 85%;
     height: 80%;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
   }
 `;
 
@@ -42,14 +37,10 @@ export const ModalHeader = styled.div`
   align-items: center;
   background: ${(props) => props.theme.colors.secundary};
   border-radius: 10px 10px 0 0;
+  height: 60px;
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    height: 60px;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
     height: 8%;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
   }
 `;
 
