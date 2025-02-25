@@ -164,14 +164,10 @@ export const TechContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    justify-content: center;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
     justify-content: flex-start;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
   }
 `;
 
