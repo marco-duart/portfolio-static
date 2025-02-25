@@ -13,17 +13,10 @@ export const Container = styled.div`
   background-color: ${(props) => props.theme.colors.secundary};
   overflow: hidden;
   padding: 2rem 0;
+  width: 100vw;
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    width: 100vw;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
     height: 92vh;
-    width: 100vw;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
-    height: 92vh;
-    width: 100vw;
   }
 `;
 
@@ -40,10 +33,8 @@ export const SkillsContainer = styled.div<{
       : props.theme.colors.secundary};
   overflow: hidden;
   padding: 2rem 0;
+  display: none;
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    display: none;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
     display: flex;
     flex-direction: column;
@@ -61,36 +52,23 @@ export const Title = styled.h2`
   font-weight: bold;
   font-family: ${(props) => props.theme.fonts.playWrite};
   font-size: 2.5rem;
+  margin-bottom: 1rem;
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    margin-bottom: 1rem;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
     margin-bottom: 0;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
   }
 `;
 
 export const FlexContainer = styled.div`
   width: 70%;
   display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 2rem;
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 2rem;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    flex-grow: 1;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     flex-grow: 1;
   }
 `;
@@ -98,32 +76,25 @@ export const FlexContainer = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+  max-width: 100%;
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    gap: 0.5rem;
-    max-width: 100%;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
     gap: 1.5rem;
     max-width: 60%;
   }
+
   @media ${CONSTANTS.DEVICE.desktop} {
     gap: 2rem;
-    max-width: 60%;
   }
 `;
 
 export const SubtitleBlock = styled.h3`
   color: ${(props) => props.theme.colors.primary};
   font-size: 1.5rem;
+  text-align: center;
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    text-align: center;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
-    text-align: left;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
     text-align: left;
   }
 `;
@@ -132,16 +103,10 @@ export const TextBlock = styled.div`
   font-size: 1.1rem;
   color: ${(props) => props.theme.colors.white};
   line-height: 1.6;
+  width: 100%;
+  text-align: center;
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    width: 100%;
-    text-align: center;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
-    width: 55%;
-    text-align: left;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
     width: 55%;
     text-align: left;
   }
@@ -150,14 +115,9 @@ export const TextBlock = styled.div`
 export const PortraitWrapper = styled.div`
   position: relative;
   transform: rotate(0deg);
+  width: 50%;
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    width: 50%;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
-    width: 30%;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
     width: 30%;
   }
 `;
@@ -165,16 +125,11 @@ export const PortraitWrapper = styled.div`
 export const ContactPortraitWrapper = styled.div`
   position: relative;
   transform: rotate(0deg);
+  display: none;
+  width: 50%;
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    display: none;
-    width: 50%;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
     display: block;
-    width: 30%;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
     width: 30%;
   }
 `;
@@ -348,21 +303,11 @@ export const IconBlock = styled.a`
   }
 
   ${StyledIconBase} {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     color: ${(props) => props.theme.colors.primary};
   }
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    ${StyledIconBase} {
-      width: 20px;
-      height: 20px;
-    }
-
-    div {
-      font-size: 0.75rem;
-    }
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
     ${StyledIconBase} {
       width: 40px;
@@ -386,7 +331,7 @@ export const PortfolioCardContainer = styled.div`
     height: 8px;
     width: 4px;
   }
-  
+
   &::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 10px;
@@ -397,17 +342,11 @@ export const PortfolioCardContainer = styled.div`
   }
 
   &::-webkit-scrollbar-track {
-    background-color: ${props => props.theme.colors.secundary};
+    background-color: ${(props) => props.theme.colors.secundary};
   }
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    flex-wrap: nowrap;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
     justify-content: center;
-    flex-wrap: wrap;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
     flex-wrap: wrap;
   }
 `;
@@ -421,15 +360,13 @@ export const PortfolioCardWrapper = styled.div`
   border-radius: 20px;
   transition: all 0.3s;
   cursor: pointer;
+  width: 220px;
+  height: 158px;
 
   &:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
   }
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    width: 220px;
-    height: 158px;
-  }
   @media ${CONSTANTS.DEVICE.fullHd} {
     width: 320px;
     height: 230px;
@@ -444,6 +381,8 @@ export const PortfolioCard = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  width: 220px;
+  height: 158px;
 
   h4 {
     color: ${(props) => props.theme.colors.white};
@@ -459,10 +398,6 @@ export const PortfolioCard = styled.div`
     border-radius: 20px;
   }
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    width: 220px;
-    height: 158px;
-  }
   @media ${CONSTANTS.DEVICE.fullHd} {
     width: 320px;
     height: 230px;
@@ -477,19 +412,13 @@ export const ModalContent = styled.div`
 
 export const DescriptionSection = styled.div`
   width: 40%;
+  display: none;
 
   table {
     width: 80%;
   }
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    display: none;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
-    display: flex;
-    flex-direction: column;
-  }
-  @media ${CONSTANTS.DEVICE.desktop} {
     display: flex;
     flex-direction: column;
   }
@@ -506,11 +435,12 @@ export const CarouselSection = styled.div`
   justify-content: center;
   align-items: center;
   padding: 20px;
+  max-width: 98%;
 
   &::-webkit-scrollbar {
     height: 8px;
   }
-  
+
   &::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 10px;
@@ -524,9 +454,6 @@ export const CarouselSection = styled.div`
     background: #f1f1f1;
   }
 
-  @media ${CONSTANTS.DEVICE.mobileS} {
-    max-width: 98%;
-  }
   @media ${CONSTANTS.DEVICE.tablet} {
     max-width: 60%;
     max-height: 80%;
