@@ -15,5 +15,5 @@ export interface User {
   facebook: string;
   address: string;
   bioTitle: string;
-  bio: string;
+  bio: Array<{ title: string; text: string; image: string }>;
 }
