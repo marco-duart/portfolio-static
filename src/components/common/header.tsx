@@ -34,7 +34,7 @@ const Header: React.FC = () => {
 
     // Correção para a dinâmica de estilização de current page
     const handleScroll = () => {
-      const sections = ["about", "skills", "portfolio", "contact"];
+      const sections = ["about", "profile", "skills", "portfolio", "contact"];
       const scrollPosition = window.scrollY + window.innerHeight / 2;
 
       for (const section of sections) {
@@ -69,6 +69,13 @@ const Header: React.FC = () => {
           className={activeSection === "about" ? "active" : ""}
         >
           Home
+        </S.HeaderScrool>
+        <S.HeaderScrool
+          mobile={true}
+          onClick={() => handleScrollTo("profile")}
+          className={activeSection === "profile" ? "active" : ""}
+        >
+          Perfil
         </S.HeaderScrool>
         <S.HeaderScrool
           mobile={false}
