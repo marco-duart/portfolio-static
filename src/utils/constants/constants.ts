@@ -6,7 +6,6 @@ import logoWhite from "../../assets/images/logo-white.png";
 import logoBackgroundBlack from "../../assets/images/logo-background-black.png";
 import frontEnd from "../../assets/images/front-end.png";
 import backEnd from "../../assets/images/back-end.png";
-import about from "../../assets/images/about.png";
 import contact from "../../assets/images/contact.png";
 import personality from "../../assets/images/personality.png";
 import enneagram from "../../assets/images/enneagram.png";
@@ -40,7 +39,6 @@ export const IMAGES = {
   logoBackgroundBlack,
   frontEnd,
   backEnd,
-  about,
   contact,
   personality,
   enneagram,
