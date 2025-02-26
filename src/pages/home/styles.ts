@@ -10,6 +10,7 @@ interface ActiveProps {
 }
 
 export const Container = styled.div`
+  min-height: 92vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -18,10 +19,6 @@ export const Container = styled.div`
   overflow: hidden;
   padding: 2rem 0;
   width: 100vw;
-
-  @media ${CONSTANTS.DEVICE.tablet} {
-    height: 92vh;
-  }
 `;
 
 export const SkillsContainer = styled.div<{
@@ -571,4 +568,40 @@ export const TipText = styled.p`
   margin-top: 2rem;
   opacity: 0.7;
   text-align: center;
+`;
+
+export const NavigationContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+`;
+
+export const NavigationButton = styled.button`
+  background-color: ${(props) => props.theme.colors.primary};
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover:not(:disabled) {
+    background-color: ${(props) => props.theme.colors.tertiary};
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+`;
+
+export const StepIndicator = styled.span`
+  color: ${(props) => props.theme.colors.white};
+  font-size: 1rem;
+  font-weight: bold;
 `;
