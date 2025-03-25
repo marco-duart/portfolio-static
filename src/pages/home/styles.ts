@@ -74,6 +74,21 @@ export const FlexContainer = styled.div`
   }
 `;
 
+export const ContactFlexContainer = styled.div`
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    gap: 2rem;
+  }
+`;
+
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -126,11 +141,10 @@ export const PortraitWrapper = styled.div`
 export const ContactPortraitWrapper = styled.div`
   position: relative;
   transform: rotate(0deg);
-  display: none;
   width: 50%;
+  display: block;
 
   @media ${CONSTANTS.DEVICE.tablet} {
-    display: block;
     width: 30%;
   }
 `;
@@ -491,28 +505,53 @@ export const StyledCarousel = styled(Carousel)`
 
 export const ProfileGrid = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
-  gap: 2rem;
-  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    justify-content: center;
+    padding: 1rem;
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 700px;
+  }
+
+  @media ${CONSTANTS.DEVICE.desktop} {
+    max-width: 800px;
+    gap: 2rem;
+  }
 `;
 
 export const ProfileCard = styled.div<ActiveProps>`
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: ${(props) => props.theme.colors.tertiary};
   border-radius: 15px;
   transition: all 0.3s ease;
   cursor: pointer;
-  padding: 1.5rem;
+  padding: 1.25rem;
   position: relative;
   overflow: hidden;
-  width: ${({ active }) => (active ? "400px" : "200px")};
-  height: 200px;
+  width: 100%;
+  min-height: 120px;
+  height: ${({ active }) => (active ? "auto" : "120px")};
+  max-height: ${({ active }) => (active ? "500px" : "120px")};
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    width: 100%;
+    min-height: 180px;
+    height: ${({ active }) => (active ? "auto" : "180px")};
+    max-height: ${({ active }) => (active ? "600px" : "180px")};
+    padding: 1.5rem;
+  }
 
   &:hover {
     box-shadow: 0 0 30px rgba(0, 255, 117, 0.4);
@@ -520,12 +559,19 @@ export const ProfileCard = styled.div<ActiveProps>`
 `;
 
 export const ProfileImageWrapper = styled.div`
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid ${(props) => props.theme.colors.primary};
+  border: 3px solid ${(props) => props.theme.colors.primary};
+  margin-bottom: 1rem;
   flex-shrink: 0;
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    width: 100px;
+    height: 100px;
+    border-width: 4px;
+  }
 `;
 
 export const ProfileImage = styled.img`
@@ -537,10 +583,15 @@ export const ProfileImage = styled.img`
 export const ProfileInfo = styled.div<ActiveProps>`
   display: flex;
   flex-direction: column;
-  margin-left: 1.5rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
   opacity: ${({ active }) => (active ? 1 : 0)};
-  width: ${({ active }) => (active ? "auto" : "0")};
-  transition: opacity 0.3s ease, width 0.3s ease;
+  max-height: ${({ active }) => (active ? "1000px" : "0")};
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: ${({ active }) => (active ? "1rem 0" : "0")};
+  gap: 0.5rem;
 `;
 
 export const ProfileName = styled.h4`

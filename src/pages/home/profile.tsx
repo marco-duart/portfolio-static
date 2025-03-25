@@ -1,6 +1,6 @@
 import * as S from "./styles";
 import * as CONSTANTS from "../../utils/constants/constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type ProfileData = {
   eneagram: {
@@ -33,23 +33,41 @@ export const Profile: React.FC<Props> = ({ profileData }) => {
   const [activeProfile, setActiveProfile] = useState<
     "eneagram" | "disc" | "personality16" | "temperaments" | null
   >(null);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const handleProfileHover = (
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < CONSTANTS.SIZES.tablet);
+    };
+
+    checkIfMobile();
+    window.addEventListener("resize", checkIfMobile);
+    return () => window.removeEventListener("resize", checkIfMobile);
+  }, []);
+
+  const handleProfileInteraction = (
     profile: "eneagram" | "disc" | "personality16" | "temperaments"
   ) => {
-    setActiveProfile(profile);
+    if (isMobile) {
+      setActiveProfile(activeProfile === profile ? null : profile);
+    } else {
+      setActiveProfile(profile);
+    }
   };
 
   const handleProfileLeave = () => {
-    setActiveProfile(null);
+    if (!isMobile) {
+      setActiveProfile(null);
+    }
   };
 
   return (
     <S.Container>
-      <S.Title style={{ marginBottom: "4rem" }}>Perfil</S.Title>
+      <S.Title style={{ marginBottom: "2rem" }}>Perfil</S.Title>
       <S.ProfileGrid>
         <S.ProfileCard
-          onMouseEnter={() => handleProfileHover("eneagram")}
+          onClick={() => isMobile && handleProfileInteraction("eneagram")}
+          onMouseEnter={() => !isMobile && handleProfileInteraction("eneagram")}
           onMouseLeave={handleProfileLeave}
           active={activeProfile === "eneagram"}
         >
@@ -66,7 +84,8 @@ export const Profile: React.FC<Props> = ({ profileData }) => {
         </S.ProfileCard>
 
         <S.ProfileCard
-          onMouseEnter={() => handleProfileHover("disc")}
+          onClick={() => isMobile && handleProfileInteraction("disc")}
+          onMouseEnter={() => !isMobile && handleProfileInteraction("disc")}
           onMouseLeave={handleProfileLeave}
           active={activeProfile === "disc"}
         >
@@ -83,7 +102,10 @@ export const Profile: React.FC<Props> = ({ profileData }) => {
         </S.ProfileCard>
 
         <S.ProfileCard
-          onMouseEnter={() => handleProfileHover("personality16")}
+          onClick={() => isMobile && handleProfileInteraction("personality16")}
+          onMouseEnter={() =>
+            !isMobile && handleProfileInteraction("personality16")
+          }
           onMouseLeave={handleProfileLeave}
           active={activeProfile === "personality16"}
         >
@@ -103,7 +125,10 @@ export const Profile: React.FC<Props> = ({ profileData }) => {
         </S.ProfileCard>
 
         <S.ProfileCard
-          onMouseEnter={() => handleProfileHover("temperaments")}
+          onClick={() => isMobile && handleProfileInteraction("temperaments")}
+          onMouseEnter={() =>
+            !isMobile && handleProfileInteraction("temperaments")
+          }
           onMouseLeave={handleProfileLeave}
           active={activeProfile === "temperaments"}
         >
@@ -123,7 +148,11 @@ export const Profile: React.FC<Props> = ({ profileData }) => {
         </S.ProfileCard>
       </S.ProfileGrid>
       {!activeProfile && (
-        <S.TipText>Passe o mouse sobre um perfil para explorar!</S.TipText>
+        <S.TipText>
+          {isMobile
+            ? "Toque em um perfil para expandir"
+            : "Passe o mouse sobre um perfil para expandir"}
+        </S.TipText>
       )}
     </S.Container>
   );
