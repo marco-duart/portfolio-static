@@ -6,7 +6,11 @@ export const experiences = [
     startDate: new Date("2017-12-11T00:00:00-03:00"),
     endDate: new Date("2019-06-11T00:00:00-03:00"),
     description:
-      "Atuava como suporte técnico e no relacionamento com grandes contas da Claro, oferecendo assistência e manutenção em linhas M2M/Telemetria. O contato com os clientes ocorria por telefone ou e-mail, registrando todas as interações e ações no sistema. Acompanhava os processos até a resolução, e quando necessário, encaminhava para outras áreas.",
+      "Criação de relatórios dinâmicos com tabelas e gráficos pivotantes para monitoramento de linhas M2M.; " +
+      "Fórmulas VLOOKUP, INDEX/MATCH para cruzar dados de múltiplas planilhas" +
+      "Padronização de planilhas compartilhadas na equipe, minimizando erros de registro; " +
+      "Lógica de manipulação de dados; " +
+      "Visão analítica para troubleshooting.",
   },
   {
     id: 2,
@@ -15,7 +19,10 @@ export const experiences = [
     startDate: new Date("2019-10-07T00:00:00-03:00"),
     endDate: new Date("2020-03-09T00:00:00-03:00"),
     description:
-      "Prestava suporte aos técnicos na parte administrativa e burocrática dos contratos. Realizava o acompanhamento dos clientes antes, durante e após a instalação, registrando informações e fechando contratos no sistema com o status correto. Monitorava o cumprimento das metas dos técnicos e relatava qualquer desvio para os supervisores, além de elaborar relatórios de produtividade e ordens de serviço.",
+      "Desenvolvimento de dashboards interativos no Excel para tracking de ordens de serviço; " +
+      "Apresentações executivas no PowerPoint com visualização de dados; " +
+      "Templates padronizados para relatórios mensais; " +
+      "Estruturação de dados para visualização.",
   },
   {
     id: 3,
@@ -24,7 +31,10 @@ export const experiences = [
     startDate: new Date("2020-09-21T00:00:00-03:00"),
     endDate: new Date("2021-04-25T00:00:00-03:00"),
     description:
-      "Como monitor de atendimento, desenvolvi habilidades interpessoais, lidando diretamente com os agentes. Minhas funções incluíam monitorar o atendimento, fornecer feedback, acompanhar os indicadores de desempenho, esclarecer dúvidas sobre processos, promover campanhas e projetos para melhoria operacional, além de auxiliar os instrutores em treinamentos e desenvolver materiais de apoio.",
+      "Análise de métricas de qualidade em planilhas com macros; " +
+      "Apresentações de feedback em PowerPoint com dados estratificados por tipo de erro; " +
+      "Documentação de processos em fluxogramas para treinamento; " +
+      "Análise de indicadores.",
   },
   {
     id: 4,
@@ -33,7 +43,10 @@ export const experiences = [
     startDate: new Date("2021-04-25T00:00:00-03:00"),
     endDate: new Date("2022-03-18T00:00:00-03:00"),
     description:
-      "Ministrei palestras e treinamentos de integração e reciclagem (mensais). Desenvolvi materiais didáticos e participei na definição e atualização de procedimentos internos. Também realizei avaliações trimestrais na operação para medir a efetividade dos processos.",
+      "Criação de materiais didáticos com animações e casos interativos; " +
+      "Manuais de processos no Word com screenshots e anotações; " +
+      "Quiz de avaliação com formulários do Excel; " +
+      "Ministração de aulas e palestras.",
   },
   {
     id: 5,
@@ -42,7 +55,9 @@ export const experiences = [
     startDate: new Date("2022-03-18T00:00:00-03:00"),
     endDate: new Date("2022-06-20T00:00:00-03:00"),
     description:
-      "Realizava manutenção e configuração de computadores, encaminhava chamados conforme demanda e trocava periféricos. Prestava suporte via acesso remoto, controlava o fluxo de entrada e saída de equipamentos, solicitava novos equipamentos conforme a necessidade e gerenciava a criação e reset de acessos para o sistema interno. Também era responsável pela distribuição de EPIs para os operadores.",
+      "Manutenção de hardware; " +
+      "Monitoramento de rede; " +
+      "Gestão de acessos.",
   },
   {
     id: 6,
@@ -51,7 +66,10 @@ export const experiences = [
     startDate: new Date("2022-06-22T00:00:00-03:00"),
     endDate: new Date("2022-08-15T00:00:00-03:00"),
     description:
-      "Supervisionava os setores comercial, técnico e financeiro, oferecendo suporte aos colaboradores em demandas críticas. Participava de plantões, acompanhava os indicadores e mantinha relatórios atualizados. Realizava feedbacks com os agentes e treinava novos colaboradores, além de orientar os operadores em casos atípicos de atendimento.",
+      "Liderança de equipes multidisciplinares (Comercial, Suporte e Financeiro) com acompanhamento diário de KPIs em dashboards Excel; " +
+      "Relatórios financeiros com fórmulas SUMIFS e COUNTIFS para análise de produtividade por equipe; " +
+      "Apresentações executivas em PowerPoint com análise SWOT de resultados; " +
+      "Priorização de demandas conflitantes.",
   },
   {
     id: 7,
@@ -60,7 +78,9 @@ export const experiences = [
     startDate: new Date("2022-08-21T00:00:00-03:00"),
     endDate: new Date("2023-09-30T00:00:00-03:00"),
     description:
-      "Realizava monitorias e feedbacks, alimentava relatórios de monitoria e encaminhava relatórios de pendências. Auxiliava nas dúvidas relacionadas ao processo e assegurava o cumprimento das normas ISO9001. Participava de reuniões de melhoria contínua da monitoria.",
+      "Auditorias de atendimento com pontuação; " +
+      "Tabelas dinâmicas para identificar gaps de performance por time/dia da semana; " +
+      "Feedback e acompanhamento individual.",
   },
   {
     id: 8,
@@ -69,6 +89,15 @@ export const experiences = [
     startDate: new Date("2023-10-01T00:00:00-03:00"),
     endDate: undefined,
     description:
-      "Desenvolvo soluções para as aplicações da empresa, com foco em sustentação. Crio novas aplicações conforme a demanda dos departamentos e monitoro e resolvo bugs no sistema.",
+      "Migração de sistema monolítico (Rails) para arquitetura de microserviços (Rails + React), aumentando a escalabilidade; " +
+      "Implementação de pipelines CI/CD com GitHub Actions e Docker; " +
+      "Otimização de queries MySQL, reduzindo tempo de resposta; " +
+      "Desenvolvimento de biblioteca de componentes reutilizáveis com Storybook; " +
+      "Otimização do front com objetivo de ter/manter pontuação Lighthouse acima de 95 através de code splitting otimização de imagens; " +
+      "Gerenciamento de estado complexo com Redux Toolkit; " +
+      "Integração com New Relic para monitoramento de performance; " +
+      "Containerização com Docker; " +
+      "Desenvolvimento de novas funcionalidades/novos sistemas conforme demanda; " +
+      "Implementação de testes para maior test coverage.",
   },
 ];

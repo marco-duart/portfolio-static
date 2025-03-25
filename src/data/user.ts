@@ -19,39 +19,38 @@ export const user: User = {
   bioTitle: "Desenvolvedor FullStack",
   bio: [
     {
-      title:
-        "De Aparecida de Goiânia para o Mundo: A Jornada de um Profissional Dedicado",
-      text: "Sou Marco Aurélio, natural de Aparecida de Goiânia, Goiás, e hoje, aos 31 anos, posso dizer que minha trajetória é um reflexo de dedicação, resiliência e paixão pela tecnologia. Minha história começa em uma infância simples, onde aprendi desde cedo o valor do trabalho e da superação.",
+      title: "Jornada Tecnológica: Da Base ao Código",
+      text: "Nascido em Aparecida de Goiânia, minha trajetória reflete a combinação de persistência e adaptabilidade. A vivência em um ambiente que exigiu resiliência desde cedo me tornou um profissional focado em soluções práticas. Minha relação com a tecnologia começou como ferramenta de trabalho e se transformou em vocação profissional.",
       image: "/assets/images/step1.png",
     },
     {
-      title: "O Início: Da Bicicleta ao Primeiro Computador",
-      text: "Na adolescência, descobri minha afinidade com a tecnologia ao realizar pequenas manutenções em computadores. Para ajudar em casa, eu oferecia serviços de 'Manutenção em Domicílio', uma ideia que surgiu da necessidade de me locomover de bicicleta. Esse foi meu primeiro contato com o empreendedorismo e o marketing, conquistando a confiança dos clientes ao levar conveniência e qualidade até suas portas.",
+      title: "Gênese Técnica: Resolução Prática de Problemas",
+      text: "Aos 15 anos, ao consertar computadores, descobri minha aptidão para diagnosticar e resolver problemas técnicos. Minha iniciativa de 'Manutenção em Domicílio' foi meu primeiro MVP - um serviço completo (diagnóstico, orçamento e execução) que me ensinou lições valiosas sobre experiência do usuário e entrega de valor, mesmo antes de conhecer esses conceitos formalmente.",
       image: "/assets/images/step2.png",
     },
     {
-      title: "Juventude: Trabalho, Família e Decisões Difíceis",
-      text: "Logo após concluir o ensino médio, entrei no mercado de trabalho para ajudar minha família. Foi um período de muito aprendizado e responsabilidade, onde pude contribuir significativamente em casa. Anos depois, conquistei uma bolsa para Engenharia da Computação, um sonho que começava a se tornar realidade. A paixão pela área floresceu, especialmente em uma aula de algoritmos, ministrada por um professor inspirador. No entanto, a vida me colocou diante de uma escolha difícil: continuar os estudos ou priorizar o sustento da família. Como filho mais velho, optei pelo trabalho, mas a semente da tecnologia já estava plantada em mim.",
+      title: "Fase de Amadurecimento: Prioridades e Sacrifícios",
+      text: "A escolha pelo trabalho em detrimento da faculdade de Engenharia da Computação foi uma lição em tomada de decisão estratégica. Mesmo atuando em outras áreas, mantive contato com tecnologia através de automação de planilhas com VBA, modificação de jogos e noções de infraestrutura realizando manutenção ocasionalmente.",
       image: "/assets/images/step3.png",
     },
     {
-      title: "Experiências Diversas: Construindo um Repertório Único",
-      text: "Por alguns anos, afastei-me da área de tecnologia, mas cada experiência profissional agregou valor à minha jornada. Trabalhei como monitor de qualidade, onde aprimorei minha capacidade de análise e comunicação, e até atuei como instrutor de treinamento, desenvolvendo habilidades de liderança e didática. Esses momentos foram essenciais para moldar o profissional que sou hoje, mostrando que cada desafio é uma oportunidade de crescimento.",
+      title: "Experiências Paralelas: Desenvolvendo Soft Skills Críticas",
+      text: "Minha passagem por diferentes áreas me proporcionou competências que hoje aplico no desenvolvimento de software: Monitoria de qualidade: atenção a detalhes e padrões; Treinamento de equipes: capacidade de explicar conceitos complexos; Gestão operacional: visão sistêmica de processos. Essas experiências complementam minha formação técnica com habilidades valiosas para trabalhar em equipe.",
       image: "/assets/images/step4.png",
     },
     {
-      title: "O Ponto de Virada: Mergulhando de Cabeça na Programação",
-      text: "Em um momento decisivo, resolvi aceitar o risco e investir em um curso imersivo de programação fullstack. Foi um ano intenso, onde prometiam condensar 2 a 3 anos de conteúdo em apenas 12 meses. Cada dia foi um desafio, mas também uma oportunidade de me reinventar. Paralelamente, participei de um processo seletivo para Desenvolvedor na empresa onde trabalhava. Com muita dedicação, entreguei projetos consistentes e conquistei meu espaço na área de tecnologia.",
+      title: "Transição de Carreira: Método e Intensidade",
+      text: "Ao decidir migrar para TI, adotei uma abordagem estruturada: 1. Contato com programação web através de video aulas (6 meses); 2. Curso FullStack Imersão (1000h em 12 meses); 3. Projetos práticos para consolidar aprendizados. O resultado foi muito satisfatório, apesar de ter sido bem desafiador.",
       image: "/assets/images/step5.png",
     },
     {
-      title: "Hoje: Um Desenvolvedor em Constante Evolução",
-      text: "Atualmente, atuo como Desenvolvedor, onde tenho a oportunidade de aprender diariamente com colegas incríveis e contribuir para projetos significativos. Minha entrada na área pode ter sido tardia, mas minha dedicação e objetivos bem traçados falam mais alto. Acredito que o sucesso é uma combinação de esforço, paixão e resiliência, e estou determinado a alcançar novos patamares nos próximos anos.",
+      title: "Atuação Atual: Developer com Visão Integral",
+      text: "Como Desenvolvedor, aplico tanto hard skills (arquitetura limpa, testes automatizados) quanto soft skills adquiridas em outras jornadas. Minha abordagem combina um pensamento analítico, capacidade didática e visão de negócios. Essa combinação me permite cooperar com minha equipe no desenvolvimento de novas soluções.",
       image: "/assets/images/step6.png",
     },
     {
-      title: "O Futuro: Objetivos e Inspiração",
-      text: "Meu caminho até aqui foi marcado por desafios, mas também por muita determinação. Tenho planos claros para o futuro: continuar evoluindo como profissional, contribuir para a comunidade de tecnologia e inspirar outras pessoas a nunca desistirem de seus sonhos, independentemente do momento em que decidem começar.",
+      title: "Visão de Futuro: Crescimento Contínuo",
+      text: "Meus objetivos refletem minha trajetória: 1. Aprofundar expertise em arquitetura de sistemas; 2. Contribuir para projetos open-source; 3. Desenvolver uma mentoria para quem inicia na área; Busco provar que background diversificado é um ativo, não limitação, no mundo da tecnologia.",
       image: "/assets/images/step7.png",
     },
   ],
