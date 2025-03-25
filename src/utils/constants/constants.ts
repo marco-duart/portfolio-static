@@ -12,22 +12,22 @@ import enneagram from "../../assets/images/enneagram.png";
 import temperament from "../../assets/images/temperament.png";
 import disc from "../../assets/images/disc.png";
 
-const SIZES = {
-  mobileS: "320px",
-  mobileM: "375px",
-  mobileL: "425px",
-  tablet: "768px",
-  desktop: "1024px",
-  fullHd: "1920px",
+export const SIZES = {
+  mobileS: 320,
+  mobileM: 375,
+  mobileL: 425,
+  tablet: 768,
+  desktop: 1024,
+  fullHd: 1920,
 };
 
 export const DEVICE = {
-  mobileS: `(min-width: ${SIZES.mobileS})`,
-  mobileM: `(min-width: ${SIZES.mobileM})`,
-  mobileL: `(min-width: ${SIZES.mobileL})`,
-  tablet: `(min-width: ${SIZES.tablet})`,
-  desktop: `(min-width: ${SIZES.desktop})`,
-  fullHd: `(min-width: ${SIZES.fullHd})`,
+  mobileS: `(min-width: ${SIZES.mobileS}px)`,
+  mobileM: `(min-width: ${SIZES.mobileM}px)`,
+  mobileL: `(min-width: ${SIZES.mobileL}px)`,
+  tablet: `(min-width: ${SIZES.tablet}px)`,
+  desktop: `(min-width: ${SIZES.desktop}px)`,
+  fullHd: `(min-width: ${SIZES.fullHd}px)`,
 };
 
 export const IMAGES = {
