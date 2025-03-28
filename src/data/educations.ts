@@ -9,7 +9,8 @@ export const educations: Education[] = [
     degreeLevel: EducationDegreeEnum.TECHNICAL,
     startDate: new Date("2023-02-01T00:00:00-03:00"),
     endDate: new Date("2024-05-30T00:00:00-03:00"),
-    description: "Formação intensiva em desenvolvimento web e mobile, abrangendo tecnologias modernas como React, Node.js, TypeScript e bancos de dados SQL/NoSQL. Enfoque em boas práticas, arquitetura de software e metodologias ágeis.",
+    description:
+      "Formação intensiva em desenvolvimento web e mobile, abrangendo tecnologias modernas como React, Node.js, TypeScript e bancos de dados SQL/NoSQL. Enfoque em boas práticas, arquitetura de software e metodologias ágeis.",
   },
   {
     id: 2,
@@ -20,5 +21,15 @@ export const educations: Education[] = [
     endDate: undefined,
     description:
       "Curso superior com ênfase em desenvolvimento de software, engenharia de dados, inteligência artificial e segurança da informação.",
+  },
+  {
+    id: 2,
+    institutionName: "Faculdade Descomplica",
+    degree: "Tecnologia em Marketing Digital",
+    degreeLevel: EducationDegreeEnum.HIGHER_EDUCATION,
+    startDate: new Date("2025-03-26T00:00:00-03:00"),
+    endDate: undefined,
+    description:
+      "Curso superior que forma profissionais para dominar a comunicação digital, análise de dados e gestão de canais de venda.",
   },
 ];
