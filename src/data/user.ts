@@ -44,8 +44,8 @@ export const user: User = {
       image: "/assets/images/step5.png",
     },
     {
-      title: "Atuação Atual: Developer com Visão Integral",
-      text: "Como Desenvolvedor, aplico tanto hard skills (arquitetura limpa, testes automatizados) quanto soft skills adquiridas em outras jornadas. Minha abordagem combina um pensamento analítico, capacidade didática e visão de negócios. Essa combinação me permite cooperar com minha equipe no desenvolvimento de novas soluções.",
+      title: "Atuação Atual: Gestor de TI com Visão Integral",
+      text: "Como Gestor e Desenvolvedor, aplico tanto hard skills (arquitetura limpa, testes automatizados) quanto soft skills adquiridas em outras jornadas. Minha abordagem combina um pensamento analítico, capacidade didática e visão de negócios. Essa combinação me permite cooperar com minha equipe no desenvolvimento de novas soluções.",
       image: "/assets/images/step6.png",
     },
     {

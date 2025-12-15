@@ -100,4 +100,38 @@ export const experiences = [
       "Desenvolvimento de novas funcionalidades/novos sistemas conforme demanda; " +
       "Implementação de testes para maior test coverage.",
   },
+  {
+    id: 9,
+    companyName: "SuaMei",
+    role: "Analista de Desenvolvimento Pleno",
+    startDate: new Date("2023-10-01T00:00:00-03:00"),
+    endDate: undefined,
+    description:
+      "Migração de sistema monolítico (Rails) para arquitetura de microserviços (Rails + React), aumentando a escalabilidade; " +
+      "Implementação de pipelines CI/CD com GitHub Actions e Docker; " +
+      "Otimização de queries MySQL, reduzindo tempo de resposta; " +
+      "Desenvolvimento de biblioteca de componentes reutilizáveis com Storybook; " +
+      "Otimização do front com objetivo de ter/manter pontuação Lighthouse acima de 95 através de code splitting otimização de imagens; " +
+      "Gerenciamento de estado complexo com Redux Toolkit; " +
+      "Integração com New Relic para monitoramento de performance; " +
+      "Containerização com Docker; " +
+      "Desenvolvimento de novas funcionalidades/novos sistemas conforme demanda; " +
+      "Implementação de testes para maior test coverage.",
+  },
+  {
+    id: 10,
+    companyName: "Instituto Brasileiro de Coaching",
+    role: "Coordenador de TI",
+    startDate: new Date("2023-10-01T00:00:00-03:00"),
+    endDate: undefined,
+    description:
+      "Coordenação do time de desenvolvimento e infraestrutura, definindo prioridades e distribuindo demandas; " +
+      "Planejamento e acompanhamento de entregas utilizando metodologias ágeis (Scrum/Kanban); " +
+      "Definição de arquitetura de sistemas e padrões técnicos (backend, frontend e DevOps); " +
+      "Apoio técnico ao time em decisões de alto impacto e resolução de problemas críticos; " +
+      "Gestão de indicadores de performance, qualidade e disponibilidade dos sistemas; " +
+      "Interface entre áreas de negócio e time técnico para levantamento de requisitos e alinhamento estratégico; " +
+      "Garantia de boas práticas de segurança, versionamento e qualidade de código; " +
+      "Participação ativa em processos de melhoria contínua, escalabilidade e modernização tecnológica."
+  },
 ];
