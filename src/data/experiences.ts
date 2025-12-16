@@ -87,7 +87,7 @@ export const experiences = [
     companyName: "Instituto Brasileiro de Coaching",
     role: "Analista de Desenvolvimento Pleno",
     startDate: new Date("2023-10-01T00:00:00-03:00"),
-    endDate: undefined,
+    endDate: new Date("2025-07-01T00:00:00-03:00"),
     description:
       "Migração de sistema monolítico (Rails) para arquitetura de microserviços (Rails + React), aumentando a escalabilidade; " +
       "Implementação de pipelines CI/CD com GitHub Actions e Docker; " +
@@ -104,8 +104,8 @@ export const experiences = [
     id: 9,
     companyName: "SuaMei",
     role: "Analista de Desenvolvimento Pleno",
-    startDate: new Date("2023-10-01T00:00:00-03:00"),
-    endDate: undefined,
+    startDate: new Date("2025-07-01T00:00:00-03:00"),
+    endDate: new Date("2025-09-05T00:00:00-03:00"),
     description:
       "Migração de sistema monolítico (Rails) para arquitetura de microserviços (Rails + React), aumentando a escalabilidade; " +
       "Implementação de pipelines CI/CD com GitHub Actions e Docker; " +
@@ -122,7 +122,7 @@ export const experiences = [
     id: 10,
     companyName: "Instituto Brasileiro de Coaching",
     role: "Coordenador de TI",
-    startDate: new Date("2023-10-01T00:00:00-03:00"),
+    startDate: new Date("2025-09-01T00:00:00-03:00"),
     endDate: undefined,
     description:
       "Coordenação do time de desenvolvimento e infraestrutura, definindo prioridades e distribuindo demandas; " +
