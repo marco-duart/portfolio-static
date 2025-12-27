@@ -25,11 +25,11 @@ export const educations: Education[] = [
   {
     id: 2,
     institutionName: "Faculdade Descomplica",
-    degree: "Tecnologia em Marketing Digital",
+    degree: "Tecnologia em Banco de Dados",
     degreeLevel: EducationDegreeEnum.HIGHER_EDUCATION,
     startDate: new Date("2025-03-26T00:00:00-03:00"),
     endDate: undefined,
     description:
-      "Curso superior que forma profissionais para dominar a comunicação digital, análise de dados e gestão de canais de venda.",
+      "Curso superior que forma profissionais para dominar a gestão, análise e segurança de bancos de dados.",
   },
 ];
