@@ -1,596 +1,595 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Marco Aurélio Duarte Bezerra - Head of Technology</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Marco Aurélio Duarte Bezerra - Desenvolvedor FullStack</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+      :root {
+        --primary-color: #0f172a; /* Azul marinho executivo */
+        --accent-color: #2563eb; /* Azul vibrante para destaques */
+        --text-color: #334155;
+        --light-bg: #f8fafc;
+        --border-color: #e2e8f0;
+      }
 
-    body {
-      color: #333;
-      line-height: 1.6;
-      font-size: 14px;
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #f9f9f9;
-    }
-
-    .resume {
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      padding: 30px;
-    }
-
-    .header {
-      text-align: center;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 20px;
-    }
-
-    .header h1 {
-      color: #2c3e50;
-      font-size: 28px;
-      margin-bottom: 5px;
-    }
-
-    .header .title {
-      color: #3498db;
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 15px;
-    }
-
-    .contact-info {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-bottom: 10px;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .print-url {
-      font-size: 12px;
-      word-break: break-all;
-      color: #555;
-    }
-
-    .section {
-      margin-bottom: 25px;
-      page-break-inside: avoid;
-    }
-
-    .section-title {
-      color: #3498db;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-      font-size: 18px;
-      text-transform: uppercase;
-    }
-
-    .summary {
-      text-align: justify;
-      margin-bottom: 25px;
-    }
-
-    .experience {
-      margin-bottom: 20px;
-    }
-
-    .experience-header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 5px;
-    }
-
-    .company {
-      font-weight: 600;
-      color: #2c3e50;
-    }
-
-    .role {
-      font-style: italic;
-    }
-
-    .date {
-      color: #7f8c8d;
-    }
-
-    .experience-description {
-      padding-left: 15px;
-    }
-
-    .experience-description ul {
-      list-style-position: outside;
-      margin-left: 15px;
-    }
-
-    .education {
-      margin-bottom: 15px;
-    }
-
-    .education-header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 5px;
-    }
-
-    .institution {
-      font-weight: 600;
-    }
-
-    .degree {
-      font-style: italic;
-    }
-
-    .skills-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 15px;
-    }
-
-    .skill-category {
-      margin-bottom: 10px;
-    }
-
-    .skill-category h4 {
-      margin-bottom: 5px;
-      color: #2c3e50;
-    }
-
-    .skill-list {
-      list-style-type: none;
-    }
-
-    .skill-list li {
-      margin-bottom: 3px;
-      position: relative;
-      padding-left: 15px;
-    }
-
-    .skill-list li:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #3498db;
-    }
-
-    .personality-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 15px;
-    }
-
-    .personality-item {
-      margin-bottom: 10px;
-    }
-
-    .personality-item h4 {
-      margin-bottom: 3px;
-      color: #2c3e50;
-    }
-
-    .personality-item .code {
-      font-size: 14px;
-    }
-
-    @media print {
-      body {
+      * {
+        margin: 0;
         padding: 0;
-        background: none;
-        font-size: 12pt;
-        line-height: 1.4;
+        box-sizing: border-box;
+        font-family: "Inter", "Segoe UI", sans-serif;
+      }
+
+      body {
+        color: var(--text-color);
+        line-height: 1.5;
+        font-size: 14px; /* Tamanho base otimizado para leitura */
+        background-color: #f0f2f5;
+        padding: 40px 20px;
       }
 
       .resume {
-        box-shadow: none;
-        padding: 0;
+        background-color: white;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        padding: 40px;
+        max-width: 850px;
+        margin: 0 auto;
+        border-radius: 8px;
       }
 
-      .section {
-        page-break-inside: auto;
-        margin-bottom: 15pt;
-      }
-
-      .experience,
-      .education {
-        page-break-inside: auto;
-        margin-bottom: 12pt;
-      }
-
-      .experience-description ul,
-      .skill-list {
-        page-break-inside: auto;
-      }
-
+      /* HEADER */
       .header {
-        page-break-after: avoid;
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+      }
+
+      .header h1 {
+        color: var(--primary-color);
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        margin-bottom: 5px;
+      }
+
+      .header .title {
+        color: var(--accent-color);
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
       }
 
       .contact-info {
-        flex-direction: column;
-        margin-bottom: 8pt;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 25px;
+        font-size: 13px;
+        color: #64748b;
       }
 
       .contact-item {
-        gap: 5px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
       }
 
-      .print-url {
-        font-size: 16px;
-        color: #555;
-      }
-
-      a {
-        text-decoration: none;
+      .contact-item a {
         color: inherit;
+        text-decoration: none;
+        transition: color 0.2s;
       }
 
-      li {
-        page-break-inside: avoid;
+      .contact-item a:hover {
+        color: var(--accent-color);
+      }
+
+      /* SECTIONS */
+      .section {
+        margin-bottom: 30px;
       }
 
       .section-title {
-        margin-bottom: 8pt;
-        padding-bottom: 3pt;
+        color: var(--primary-color);
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
       }
-    }
 
-    @media (max-width: 600px) {
+      .summary {
+        text-align: justify;
+        color: #475569;
+        font-size: 14px;
+        line-height: 1.6;
+      }
 
-      .experience-header,
-      .education-header {
+      /* EXPERIENCE */
+      .experience {
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .experience:last-child {
+        margin-bottom: 0;
+      }
+
+      .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 6px;
+      }
+
+      .company-role-group {
+        display: flex;
         flex-direction: column;
       }
 
+      .role {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--primary-color);
+      }
+
+      .company {
+        font-weight: 500;
+        color: var(--accent-color);
+        font-size: 14px;
+      }
+
       .date {
-        margin-top: 3px;
+        font-size: 13px;
+        color: #94a3b8;
+        font-weight: 500;
+        white-space: nowrap;
       }
 
-      .skills-container,
+      .experience-description {
+        margin-top: 8px;
+      }
+
+      .experience-description ul {
+        list-style: none;
+      }
+
+      .experience-description li {
+        position: relative;
+        padding-left: 18px;
+        margin-bottom: 4px;
+        color: #475569;
+      }
+
+      .experience-description li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--accent-color);
+        font-weight: bold;
+      }
+
+      /* Compact older experiences */
+      .experience.compact .role {
+        font-size: 14px;
+      }
+      .experience.compact .experience-description {
+        display: none;
+      } /* Oculta detalhes de exp antigas na impressão se quiser, ou mantenha visível */
+
+      /* EDUCATION */
+      .education {
+        margin-bottom: 12px;
+      }
+
+      .education-header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .institution {
+        font-weight: 700;
+        color: var(--primary-color);
+      }
+      .degree {
+        color: #475569;
+      }
+
+      /* SKILLS - TAG STYLE */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .skill-category h4 {
+        font-size: 14px;
+        color: var(--primary-color);
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      .tags-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .tag {
+        background-color: #eff6ff;
+        color: var(--accent-color);
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        border: 1px solid #dbeafe;
+      }
+
+      /* PERSONALITY */
       .personality-grid {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        background: #f8fafc;
+        padding: 15px;
+        border-radius: 6px;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <div class="resume">
-    <div class="header">
-      <h1>Marco Aurélio Duarte Bezerra</h1>
-      <div class="title">Desenvolvedor FullStack</div>
-      <div class="contact-info">
-        <div class="contact-item">
-          <span>📧</span>
-          <span>marcoaurelioduartebezerra@gmail.com</span>
+      .personality-item h4 {
+        font-size: 12px;
+        color: #64748b;
+        margin-bottom: 2px;
+        text-transform: uppercase;
+      }
+
+      .personality-item .code {
+        font-weight: 700;
+        color: var(--primary-color);
+        font-size: 14px;
+      }
+
+      /* PRINT STYLES */
+      @media print {
+        body {
+          background: none;
+          padding: 0;
+          font-size: 12px;
+        }
+        .resume {
+          box-shadow: none;
+          padding: 0;
+          width: 100%;
+          max-width: 100%;
+        }
+        .header h1 {
+          font-size: 26px;
+        }
+        .section-title {
+          font-size: 14px;
+          margin-top: 15px;
+          border-bottom: 1px solid #ccc;
+        }
+        .tag {
+          border: 1px solid #ccc;
+          color: #000;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        .date {
+          color: #333;
+        }
+
+        /* Avoid breaking inside elements */
+        .experience,
+        .education,
+        .skill-category,
+        li {
+          page-break-inside: avoid;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .resume {
+          padding: 20px;
+        }
+        .experience-header,
+        .education-header {
+          flex-direction: column;
+        }
+        .date {
+          margin-top: 2px;
+        }
+        .skills-grid,
+        .personality-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="resume">
+      <div class="header">
+        <h1>Marco Aurélio Duarte Bezerra</h1>
+        <div class="title">
+          Head of Technology | Tech Lead | Software Engineer
         </div>
-        <div class="contact-item">
-          <span>📱</span>
-          <span>(62) 99406-9668</span>
-        </div>
-        <div class="contact-item">
-          <span>🏠</span>
-          <span>Senador Canedo - GO</span>
+        <div class="contact-info">
+          <div class="contact-item">📧 marcoaurelioduartebezerra@gmail.com</div>
+          <div class="contact-item">📱 (62) 99406-9668</div>
+          <div class="contact-item">🏠 Senador Canedo - GO</div>
+          <div class="contact-item">🔗 linkedin.com/in/aurelio-duart</div>
+          <div class="contact-item">🐱 github.com/marco-duart</div>
         </div>
       </div>
-      <div class="contact-info">
-        <div class="contact-item">
-          <span>🔗</span>
-          <span class="print-url">linkedin.com/in/aurelio-duart</span>
+
+      <div class="section">
+        <h2 class="section-title">Resumo Profissional</h2>
+        <div class="summary">
+          Head of Technology & Software Engineer com sólida experiência em
+          liderança de times e desenvolvimento Full Stack. Atuo na intersecção
+          entre estratégia de negócio e execução técnica, reportando diretamente
+          à diretoria e gerenciando orçamentos de Cloud e Projetos. Especialista
+          na modernização de sistemas legados e arquiteturas complexas,
+          combinando uma visão analítica de dados com hands-on em Ruby on Rails,
+          Node.js, React e Cloud.
         </div>
-        <div class="contact-item">
-          <span>🐱</span>
-          <span class="print-url">github.com/marco-duart</span>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Experiência Profissional</h2>
+
+        <div class="experience">
+          <div class="experience-header">
+            <div class="company-role-group">
+              <span class="role">Head of Technology</span>
+              <span class="company"
+                >Instituto Brasileiro de Coaching - IBC</span
+              >
+            </div>
+            <div class="date">09/2025 - Atual</div>
+          </div>
+          <div class="experience-description">
+            <ul>
+              <li>
+                <strong>Gestão Executiva & FinOps:</strong> Aprovação de
+                projetos, report executivo ao CIO/Diretoria e gestão de custos
+                de Cloud (GCP/AWS).
+              </li>
+              <li>
+                <strong>Liderança Técnica:</strong> Definição de stack
+                tecnológica e padrões de arquitetura.
+              </li>
+              <li>
+                <strong>Modernização:</strong> Liderança na migração de
+                Monólitos Rails para Microserviços e APIs escaláveis.
+              </li>
+              <li>
+                <strong>DevOps:</strong> Orquestração de containers Docker,
+                pipelines CI/CD e alta disponibilidade.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-header">
+            <div class="company-role-group">
+              <span class="role"
+                >Engenheiro de Software & Consultor (Founder)</span
+              >
+              <span class="company">MA Consultoria de TI</span>
+            </div>
+            <div class="date">02/2023 - Atual</div>
+          </div>
+          <div class="experience-description">
+            <ul>
+              <li>
+                Consultoria B2B para arquitetura de soluções e modernização
+                digital.
+              </li>
+              <li>
+                Desenvolvimento de software sob medida (Web & Mobile) utilizando
+                Node.js, React e Ruby on Rails.
+              </li>
+              <li>
+                Criação de MVPs e automação de processos de negócio com foco em
+                escalabilidade.
+              </li>
+              <li>Gestão de infraestrutura Cloud e entregas Full Cycle.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-header">
+            <div class="company-role-group">
+              <span class="role">Analista de Desenvolvimento Full Stack</span>
+              <span class="company"
+                >Instituto Brasileiro de Coaching - IBC</span
+              >
+            </div>
+            <div class="date">10/2023 - 09/2025</div>
+          </div>
+          <div class="experience-description">
+            <ul>
+              <li>
+                Migração de legado (Rails) para React, aumentando performance e
+                UX.
+              </li>
+              <li>
+                Otimização de queries MySQL e implementação de testes para maior
+                cobertura (Test Coverage).
+              </li>
+              <li>
+                Desenvolvimento de bibliotecas de componentes (Design System)
+                com Storybook.
+              </li>
+              <li>
+                Manutenção de pontuação Lighthouse acima de 95 (Performance
+                Web).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-header">
+            <div class="company-role-group">
+              <span class="role">Analista de Monitoria & Qualidade</span>
+              <span class="company">Instituto Brasileiro de Coaching</span>
+            </div>
+            <div class="date">08/2022 - 10/2023</div>
+          </div>
+          <div class="experience-description">
+            <ul>
+              <li>
+                Análise de dados com Excel Avançado e auditoria de processos
+                ISO9001.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="experience-header">
+            <div class="company-role-group">
+              <span class="role">Supervisor de Operações</span>
+              <span class="company">Ragtek Tecnologia</span>
+            </div>
+            <div class="date">06/2022 - 08/2022</div>
+          </div>
+          <div class="experience-description">
+            <ul>
+              <li>
+                Liderança multidisciplinar, gestão de KPIs e relatórios
+                financeiros (BI).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div
+          style="
+            margin-top: 15px;
+            font-size: 13px;
+            color: #64748b;
+            font-style: italic;
+          "
+        >
+          <strong>Outras experiências relevantes:</strong> Técnico de TI na
+          Access Contact (2022), Instrutor de Treinamento na Access Contact
+          (2021-2022), BackOffice na BrasilCenter (2017-2019).
+        </div> -->
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Frontend & Mobile</h4>
+            <div class="tags-container">
+              <span class="tag">React.js</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Redux Toolkit</span>
+              <span class="tag">Storybook</span>
+              <span class="tag">Material UI</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Backend & Cloud</h4>
+            <div class="tags-container">
+              <span class="tag">Node.js</span>
+              <span class="tag">Ruby on Rails</span>
+              <span class="tag">NestJS</span>
+              <span class="tag">Google Cloud (GCP)</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Docker</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Microservices</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Banco de Dados</h4>
+            <div class="tags-container">
+              <span class="tag">MySQL</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Redis</span>
+              <span class="tag">TypeORM</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Gestão & Metodologias</h4>
+            <div class="tags-container">
+              <span class="tag">Liderança Técnica</span>
+              <span class="tag">FinOps</span>
+              <span class="tag">Scrum/Kanban</span>
+              <span class="tag">Clean Code</span>
+              <span class="tag">TDD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Formação Acadêmica</h2>
+        <div class="education">
+          <div class="education-header">
+            <span class="institution"
+              >Bacharelado em Ciência da Computação</span
+            >
+            <span class="date">Cursando (Previsão: 2028)</span>
+          </div>
+          <div class="company">Faculdade Descomplica</div>
+        </div>
+        <div class="education">
+          <div class="education-header">
+            <span class="institution">Tecnologia em Banco de Dados</span>
+            <span class="date">Cursando</span>
+          </div>
+          <div class="company">Faculdade Descomplica</div>
+        </div>
+      </div>
+
+      <div class="section" style="page-break-inside: avoid">
+        <h2 class="section-title">Perfil Comportamental</h2>
+        <div class="personality-grid">
+          <div class="personality-item">
+            <h4>Eneagrama</h4>
+            <div class="code">Tipo 1 (Perfeccionista)</div>
+          </div>
+          <div class="personality-item">
+            <h4>DISC</h4>
+            <div class="code">CS (Conformidade)</div>
+          </div>
+          <div class="personality-item">
+            <h4>MBTI</h4>
+            <div class="code">INTJ (Arquiteto)</div>
+          </div>
+          <div class="personality-item">
+            <h4>Temperamento</h4>
+            <div class="code">Melancólico</div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="section">
-      <h2 class="section-title">Resumo Profissional</h2>
-      <div class="summary">
-        Desenvolvedor com 2+ anos de experiência em arquitetura de sistemas web completos, desde APIs até interfaces.
-        Especializado em resolver problemas complexos
-        através de código limpo e boas práticas de engenharia de software. Experiência prévia em liderança e gestão de
-        qualidade agregam visão estratégica ao desenvolvimento técnico.
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Experiência Profissional</h2>
-
-      <div class="experience">
-        <div class="experience-header">
-          <div>
-            <span class="company">Instituto Brasileiro de Coaching</span> -
-            <span class="role">Analista de Desenvolvimento Pleno</span>
-          </div>
-          <div class="date">10/2023 - Atual</div>
-        </div>
-        <div class="experience-description">
-          <ul>
-            <li>Migração de sistema monolítico (Rails) para arquitetura de microserviços (Rails + React), aumentando a
-              escalabilidade</li>
-            <li>Implementação de pipelines CI/CD com GitHub Actions e Docker</li>
-            <li>Otimização de queries MySQL, reduzindo tempo de resposta</li>
-            <li>Desenvolvimento de biblioteca de componentes reutilizáveis com Storybook</li>
-            <li>Otimização do front com objetivo de ter/manter pontuação Lighthouse acima de 95</li>
-            <li>Gerenciamento de estado complexo com Redux Toolkit</li>
-            <li>Integração com New Relic para monitoramento de performance</li>
-            <li>Containerização com Docker</li>
-            <li>Implementação de testes para maior test coverage</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="experience">
-        <div class="experience-header">
-          <div>
-            <span class="company">Instituto Brasileiro de Coaching</span> -
-            <span class="role">Analista de Monitoria</span>
-          </div>
-          <div class="date">08/2022 - 09/2023</div>
-        </div>
-        <div class="experience-description">
-          <ul>
-            <li>Auditorias de atendimento com pontuação</li>
-            <li>Tabelas dinâmicas para identificar gaps de performance por time/dia da semana</li>
-            <li>Feedback e acompanhamento individual</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="experience">
-        <div class="experience-header">
-          <div>
-            <span class="company">Ractek Tecnologia</span> -
-            <span class="role">Supervisor</span>
-          </div>
-          <div class="date">06/2022 - 08/2022</div>
-        </div>
-        <div class="experience-description">
-          <ul>
-            <li>Liderança de equipes multidisciplinares (Comercial, Suporte e Financeiro)</li>
-            <li>Acompanhamento diário de KPIs em dashboards Excel</li>
-            <li>Relatórios financeiros com fórmulas SUMIFS e COUNTIFS</li>
-            <li>Apresentações executivas em PowerPoint com análise SWOT</li>
-            <li>Priorização de demandas conflitantes</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="experience">
-        <div class="experience-header">
-          <div>
-            <span class="company">Access Contact</span> -
-            <span class="role">Técnico de TI - Infra</span>
-          </div>
-          <div class="date">03/2022 - 06/2022</div>
-        </div>
-        <div class="experience-description">
-          <ul>
-            <li>Manutenção de hardware</li>
-            <li>Monitoramento de rede</li>
-            <li>Gestão de acessos</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="experience">
-        <div class="experience-header">
-          <div>
-            <span class="company">Access Contact</span> -
-            <span class="role">Instrutor de Treinamento</span>
-          </div>
-          <div class="date">04/2021 - 03/2022</div>
-        </div>
-        <div class="experience-description">
-          <ul>
-            <li>Criação de materiais didáticos com animações e casos interativos</li>
-            <li>Manuais de processos no Word com screenshots e anotações</li>
-            <li>Quiz de avaliação com formulários do Excel</li>
-            <li>Ministração de aulas e palestras</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="experience">
-        <div class="experience-header">
-          <div>
-            <span class="company">Access Contact</span> -
-            <span class="role">Monitor de Atendimento</span>
-          </div>
-          <div class="date">09/2020 - 04/2021</div>
-        </div>
-        <div class="experience-description">
-          <ul>
-            <li>Análise de métricas de qualidade em planilhas com macros</li>
-            <li>Apresentações de feedback em PowerPoint com dados estratificados</li>
-            <li>Documentação de processos em fluxogramas para treinamento</li>
-            <li>Análise de indicadores</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="experience">
-        <div class="experience-header">
-          <div>
-            <span class="company">Grupo Hable</span> -
-            <span class="role">Assistente Administrativo</span>
-          </div>
-          <div class="date">10/2019 - 03/2020</div>
-        </div>
-        <div class="experience-description">
-          <ul>
-            <li>Desenvolvimento de dashboards interativos no Excel</li>
-            <li>Apresentações executivas no PowerPoint com visualização de dados</li>
-            <li>Templates padronizados para relatórios mensais</li>
-            <li>Estruturação de dados para visualização</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="experience">
-        <div class="experience-header">
-          <div>
-            <span class="company">BrasilCenter</span> -
-            <span class="role">BackOffice M2M/Telemetria</span>
-          </div>
-          <div class="date">12/2017 - 06/2019</div>
-        </div>
-        <div class="experience-description">
-          <ul>
-            <li>Criação de relatórios dinâmicos com tabelas e gráficos pivotantes</li>
-            <li>Fórmulas VLOOKUP, INDEX/MATCH para cruzar dados</li>
-            <li>Padronização de planilhas compartilhadas na equipe</li>
-            <li>Lógica de manipulação de dados</li>
-            <li>Visão analítica para troubleshooting</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Formação Acadêmica</h2>
-
-      <div class="education">
-        <div class="education-header">
-          <div>
-            <span class="institution">Faculdade Descomplica</span> -
-            <span class="degree">Tecnologia em Marketing Digital</span>
-          </div>
-          <div class="date">03/2025 - Cursando</div>
-        </div>
-        <div>
-          Curso superior que forma profissionais para dominar a comunicação digital, análise de dados e gestão de canais
-          de venda.
-        </div>
-      </div>
-
-      <div class="education">
-        <div class="education-header">
-          <div>
-            <span class="institution">Faculdade Descomplica</span> -
-            <span class="degree">Bacharelado em Ciência da Computação</span>
-          </div>
-          <div class="date">10/2024 - Cursando</div>
-        </div>
-        <div>
-          Curso superior com ênfase em desenvolvimento de software, engenharia de dados, inteligência artificial e
-          segurança da informação.
-        </div>
-      </div>
-
-      <div class="education">
-        <div class="education-header">
-          <div>
-            <span class="institution">Arnia Dev</span> -
-            <span class="degree">Desenvolvimento Fullstack</span>
-          </div>
-          <div class="date">02/2023 - 05/2024</div>
-        </div>
-        <div>
-          Formação intensiva em desenvolvimento web e mobile, abrangendo tecnologias modernas como React, Node.js,
-          TypeScript e bancos de dados SQL/NoSQL. Enfoque em boas práticas, arquitetura de software e metodologias
-          ágeis.
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Habilidades Técnicas</h2>
-      <div class="skills-container">
-        <div class="skill-category">
-          <h4>Frontend</h4>
-          <ul class="skill-list">
-            <li>React</li>
-            <li>Next.js</li>
-            <li>React Native</li>
-            <li>TypeScript</li>
-            <li>Redux</li>
-            <li>Styled Components</li>
-            <li>Material UI</li>
-            <li>Storybook</li>
-          </ul>
-        </div>
-
-        <div class="skill-category">
-          <h4>Backend</h4>
-          <ul class="skill-list">
-            <li>Node.js</li>
-            <li>NestJS</li>
-            <li>Express.js</li>
-            <li>Ruby on Rails</li>
-            <li>TypeORM</li>
-            <li>Mongoose</li>
-          </ul>
-        </div>
-
-        <div class="skill-category">
-          <h4>Banco de Dados</h4>
-          <ul class="skill-list">
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-            <li>SQL Developer</li>
-          </ul>
-        </div>
-
-        <div class="skill-category">
-          <h4>DevOps & Ferramentas</h4>
-          <ul class="skill-list">
-            <li>Docker</li>
-            <li>Git/GitHub</li>
-            <li>GitHub Actions</li>
-            <li>Cloudflare</li>
-            <li>Railway</li>
-            <li>Jest</li>
-            <li>Vitest</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 class="section-title">Últimos Testes de Perfil Comportamental</h2>
-      <div class="personality-grid">
-        <div class="personality-item">
-          <h4>Eneagrama</h4>
-          <div class="code">Tipo 1 - O Perfeccionista</div>
-        </div>
-
-        <div class="personality-item">
-          <h4>DISC</h4>
-          <div class="code">CS - Conformidade/Estabilidade</div>
-        </div>
-
-        <div class="personality-item">
-          <h4>MBTI</h4>
-          <div class="code">INTJ - Arquiteto</div>
-        </div>
-
-        <div class="personality-item">
-          <h4>Temperamentos</h4>
-          <div class="code">MP - Melancólico/Pedra</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
