@@ -85,7 +85,7 @@ export const experiences = [
   {
     id: 8,
     companyName: "Instituto Brasileiro de Coaching",
-    role: "Analista de Desenvolvimento Pleno",
+    role: "Analista de Desenvolvimento",
     startDate: new Date("2023-10-01T00:00:00-03:00"),
     endDate: new Date("2025-07-01T00:00:00-03:00"),
     description:
@@ -103,7 +103,7 @@ export const experiences = [
   {
     id: 9,
     companyName: "SuaMei",
-    role: "Analista de Desenvolvimento Pleno",
+    role: "Analista de Desenvolvimento",
     startDate: new Date("2025-07-01T00:00:00-03:00"),
     endDate: new Date("2025-09-05T00:00:00-03:00"),
     description:
