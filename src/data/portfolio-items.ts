@@ -2,6 +2,7 @@ export const portfolioItems = [
   {
     id: 1,
     name: "Mentor Class",
+    show: true,
     description:
       "Plataforma de mentorias onde o aluno e o mentor podem se conectar, agendando aulas.",
     technologies: "HTML;CSS;JAVASCRIPT",
@@ -40,6 +41,7 @@ export const portfolioItems = [
   {
     id: 2,
     name: "To Do List",
+    show: true,
     description: "To do list simples desenvolvida em react.",
     technologies: "REACT;VITE;JAVASCRIPT;TYPESCRIPT;STYLED-COMPONENTS",
     link: "https://github.com/marco-duart/To-Do.List",
@@ -61,6 +63,7 @@ export const portfolioItems = [
   {
     id: 3,
     name: "Buscar Medicos",
+    show: true,
     description:
       "Plataforma de vagas para área médica. Corporações anunciam suas vagas e médicos cadastram seus currículos e se candidatam a vagas.",
     technologies:
@@ -112,6 +115,7 @@ export const portfolioItems = [
   {
     id: 4,
     name: "CulturePower API",
+    show: true,
     description:
       "Este é um projeto de API para um sistema de premiação interna, desenvolvido em Node.js com o framework Express e utilizando MongoDB como banco de dados.",
     technologies: "NODE-JS;TYPESCRIPT;EXPRESS-JS;MONGO-DB;MONGOOSE;VITEST",
@@ -126,6 +130,7 @@ export const portfolioItems = [
   {
     id: 5,
     name: "Metavagas API",
+    show: true,
     description:
       "Este é um projeto de API para um sistema de oferta/procura de vagas, desenvolvido em Node.js com o framework NestJs e utilizando PostgreSQL como banco de dados.",
     technologies:
@@ -141,6 +146,7 @@ export const portfolioItems = [
   {
     id: 6,
     name: "Metavagas",
+    show: true,
     description:
       "Este é um projeto de Front para um sistema de oferta/procura de vagas, desenvolvido em javascript/typescript com a biblioteca React.",
     technologies:
@@ -164,6 +170,7 @@ export const portfolioItems = [
   {
     id: 7,
     name: "Portfolio Back",
+    show: true,
     description:
       "Este é um projeto de um servidor para um portfolio baseado em front e server. O projeto possui autenticação e um ambiente de administrador.",
     technologies:
@@ -179,6 +186,7 @@ export const portfolioItems = [
   {
     id: 8,
     name: "Portfolio Front",
+    show: true,
     description:
       "Este é um projeto de um front para um portfolio baseado em front e server. O projeto possui autenticação e um ambiente de administrador.",
     technologies:
@@ -242,6 +250,7 @@ export const portfolioItems = [
   {
     id: 9,
     name: "Porto Club Barbershop",
+    show: true,
     description:
       "Este projeto implementa um website de barbearia com foco em uma interface responsiva, transições suaves e uma navegação interativa baseada em rolagem.",
     technologies:
@@ -277,6 +286,7 @@ export const portfolioItems = [
   {
     id: 10,
     name: "Quali-Track Server",
+    show: false,
     description:
       "Este projeto implementa um sistema de acompanhamento e gestão de avaliações por equipe, permitindo controle completo de assinaturas, relatórios e monitorias de performance. Este é o repositório do servidor.",
     technologies:
@@ -292,6 +302,7 @@ export const portfolioItems = [
   {
     id: 11,
     name: "Quali-Track Web",
+    show: false,
     description:
       "Este projeto implementa um sistema de acompanhamento e gestão de avaliações por equipe, permitindo controle completo de assinaturas, relatórios e monitorias de performance. Este é o repositório da aplicação web.",
     technologies:
@@ -307,6 +318,7 @@ export const portfolioItems = [
   {
     id: 12,
     name: "Quali-Track Mobile",
+    show: false,
     description:
       "Este projeto implementa um sistema de acompanhamento e gestão de avaliações por equipe, permitindo controle completo de assinaturas, relatórios e monitorias de performance. Este é o repositório da aplicação mobile.",
     technologies:
@@ -316,6 +328,214 @@ export const portfolioItems = [
       {
         id: 47,
         photoUrl: "/assets/projects/new-project.png",
+      },
+    ],
+  },
+  {
+    id: 13,
+    name: "Print Hook",
+    show: true,
+    description:
+      "PrintHook é uma solução robusta para automação de impressão em eventos itinerantes. Ele permite que sistemas em nuvem (VM GCP) enviem documentos para impressão em computadores locais.",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 48,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 14,
+    name: "Path Link Client",
+    show: true,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 49,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 15,
+    name: "Path Link Server",
+    show: true,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 50,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 16,
+    name: "Sinap Client",
+    show: true,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 51,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 17,
+    name: "Sinap API",
+    show: true,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 52,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 18,
+    name: "Talent Flow Front",
+    show: true,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 53,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 19,
+    name: "Talent Flow API",
+    show: true,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 54,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 20,
+    name: "Kaizen Flow Server",
+    show: true,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 55,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 21,
+    name: "Kaizen Flow Client",
+    show: true,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 56,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 22,
+    name: "Tech Raids Server",
+    show: true,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 57,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 23,
+    name: "Tech Raids Client",
+    show: true,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 58,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 24,
+    name: "Nexus Vibe Server",
+    show: false,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 59,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 25,
+    name: "Nexus Vibe Mobile",
+    show: false,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 60,
+        photoUrl: "",
       },
     ],
   },

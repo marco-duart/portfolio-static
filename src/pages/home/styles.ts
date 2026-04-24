@@ -25,7 +25,7 @@ export const SkillsContainer = styled.div<{
   activeSection: "front" | "back" | null;
 }>`
   width: 100vw;
-  height: 92vh;
+  min-height: 92vh;
   background-color: ${(props) =>
     props.activeSection === "front"
       ? "#ff4d4d"
@@ -33,14 +33,15 @@ export const SkillsContainer = styled.div<{
       ? "#007bff"
       : props.theme.colors.secundary};
   overflow: hidden;
-  padding: 2rem 0;
-  display: none;
+  padding: 1.5rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
   @media ${CONSTANTS.DEVICE.tablet} {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    min-height: 92vh;
+    padding: 2rem 0;
   }
 `;
 
@@ -175,16 +176,30 @@ export const PortraitOverlay = styled.div`
 
 export const SkillsImageContainer = styled.div`
   position: relative;
-  width: 80%;
-  height: 85%;
+  width: 94%;
+  height: 40vh;
+  min-height: 280px;
+  max-height: 440px;
   display: flex;
   overflow: hidden;
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    width: 80%;
+    height: 62vh;
+    min-height: 460px;
+    max-height: 720px;
+  }
 `;
 
 export const SkillsTitleContainer = styled.div`
-  height: 15%;
+  min-height: 72px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    min-height: 15%;
+    align-items: flex-end;
+  }
 `;
 
 export const HintText = styled.p`
@@ -259,6 +274,57 @@ export const SkillsInfo = styled.div<{ activeSection: "front" | "back" }>`
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+  }
+`;
+
+export const SkillsInfoMobile = styled.div`
+  width: 94%;
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid ${(props) => props.theme.colors.primary}66;
+  border-radius: 14px;
+  padding: 0.9rem;
+
+  h3 {
+    color: ${(props) => props.theme.colors.white};
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    display: none;
+  }
+`;
+
+export const SkillsMobileGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+`;
+
+export const SkillsMobileCard = styled.div`
+  background: ${(props) => props.theme.colors.background};
+  border: 1px solid ${(props) => props.theme.colors.primary}33;
+  border-radius: 10px;
+  padding: 0.55rem 0.35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 86px;
+
+  img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+  }
+
+  span {
+    color: ${(props) => props.theme.colors.white};
+    font-size: 0.68rem;
+    text-align: center;
+    line-height: 1.2;
   }
 `;
 
@@ -655,4 +721,202 @@ export const StepIndicator = styled.span`
   color: ${(props) => props.theme.colors.white};
   font-size: 1rem;
   font-weight: bold;
+`;
+
+export const ProfileSection = styled.section`
+  width: 100%;
+  min-height: 92vh;
+  padding: 2.2rem 1rem;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(0, 217, 255, 0.16),
+      transparent 40%
+    ),
+    radial-gradient(circle at 85% 80%, rgba(255, 0, 110, 0.14), transparent 42%),
+    ${(props) => props.theme.colors.secundary};
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    padding: 3.5rem 2rem;
+  }
+`;
+
+export const ProfileTabs = styled.div`
+  width: min(1100px, 100%);
+  margin: 0 auto 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+`;
+
+export const ProfileTabButton = styled.button<{ active: boolean }>`
+  border: 1px solid
+    ${(props) =>
+      props.active
+        ? props.theme.colors.primary
+        : `${props.theme.colors.primary}44`};
+  background: ${(props) =>
+    props.active ? props.theme.colors.primary : props.theme.colors.background};
+  color: ${(props) =>
+    props.active ? props.theme.colors.background : props.theme.colors.white};
+  padding: 0.7rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: ${(props) => props.theme.boxShadow.neon};
+  }
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    font-size: 0.92rem;
+  }
+`;
+
+export const ProfileSpotlight = styled.div`
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  border: 1px solid ${(props) => props.theme.colors.primary}33;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(10, 16, 34, 0.82);
+  backdrop-filter: blur(8px);
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    grid-template-columns: minmax(260px, 0.9fr) 1.4fr;
+    gap: 0;
+  }
+`;
+
+export const ProfileSpotlightVisual = styled.div`
+  position: relative;
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  background: linear-gradient(165deg, #0f1f42, #142f56);
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    min-height: 420px;
+  }
+`;
+
+export const ProfileHalo = styled.div`
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    ${(props) => props.theme.colors.primary}88,
+    transparent 70%
+  );
+  filter: blur(8px);
+`;
+
+export const ProfileSpotlightImage = styled.img`
+  width: min(74%, 260px);
+  height: auto;
+  object-fit: contain;
+  z-index: 1;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.35));
+`;
+
+export const ProfileSpotlightContent = styled.div`
+  padding: 1.1rem 1rem 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    padding: 2rem;
+    gap: 0.95rem;
+  }
+`;
+
+export const ProfileMiniLabel = styled.span`
+  color: ${(props) => props.theme.colors.primary};
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-size: 0.7rem;
+  font-weight: 700;
+`;
+
+export const ProfileMainTitle = styled.h3`
+  color: ${(props) => props.theme.colors.white};
+  font-size: 1.35rem;
+  line-height: 1.2;
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    font-size: 2rem;
+  }
+`;
+
+export const ProfileMainCode = styled.div`
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.34rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid ${(props) => props.theme.colors.accent};
+  color: ${(props) => props.theme.colors.accent};
+  font-weight: 700;
+  font-size: 0.85rem;
+`;
+
+export const ProfileMainDescription = styled.p`
+  color: ${(props) => props.theme.colors.white};
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.95;
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    font-size: 1.02rem;
+  }
+`;
+
+export const ProfileMetrics = styled.div`
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: 1fr;
+  margin-top: 0.2rem;
+
+  @media ${CONSTANTS.DEVICE.tablet} {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+`;
+
+export const ProfileMetricCard = styled.div`
+  border: 1px solid ${(props) => props.theme.colors.primary}33;
+  background: ${(props) => props.theme.colors.background};
+  border-radius: 12px;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.34rem;
+
+  strong {
+    color: ${(props) => props.theme.colors.primary};
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  span {
+    color: ${(props) => props.theme.colors.white};
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
 `;

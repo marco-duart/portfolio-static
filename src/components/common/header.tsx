@@ -7,7 +7,17 @@ import * as S from "./styles";
 const Header: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [activeSection, setActiveSection] = useState<string>("about");
+  const [activeSection, setActiveSection] = useState<string>("hero");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navItems = [
+    { id: "hero", label: "Inicio" },
+    { id: "about", label: "Sobre" },
+    { id: "profile", label: "Perfil" },
+    { id: "skills", label: "Habilidades" },
+    { id: "projects", label: "Projetos" },
+    { id: "contact", label: "Contato" },
+  ];
 
   const handleScrollTo = (id: string) => {
     const headerOffset = window.innerHeight * 0.08;
@@ -21,20 +31,21 @@ const Header: React.FC = () => {
         offset: -headerOffset,
       });
     }
+
+    setIsMenuOpen(false);
   };
 
   useEffect(() => {
     const path = location.pathname;
-    const section = path.split("/").pop() || "about";
+    const section = path.split("/").pop() || "hero";
     if (section === "curriculum") {
       setActiveSection("curriculum");
     } else {
       setActiveSection(section);
     }
 
-    // Correção para a dinâmica de estilização de current page
     const handleScroll = () => {
-      const sections = ["about", "profile", "skills", "portfolio", "contact"];
+      const sections = ["hero", "about", "profile", "skills", "projects", "contact"];
       const scrollPosition = window.scrollY + window.innerHeight / 2;
 
       for (const section of sections) {
@@ -57,47 +68,35 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location.pathname]);
 
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location.pathname]);
+
   return (
     <S.Header>
-      <div>
+      <S.LogoWrap>
         <Logo />
-      </div>
-      <S.Navbar>
-        <S.HeaderScrool
-          mobile={true}
-          onClick={() => handleScrollTo("about")}
-          className={activeSection === "about" ? "active" : ""}
-        >
-          Home
-        </S.HeaderScrool>
-        <S.HeaderScrool
-          mobile={true}
-          onClick={() => handleScrollTo("profile")}
-          className={activeSection === "profile" ? "active" : ""}
-        >
-          Perfil
-        </S.HeaderScrool>
-        <S.HeaderScrool
-          mobile={false}
-          onClick={() => handleScrollTo("skills")}
-          className={activeSection === "skills" ? "active" : ""}
-        >
-          Habilidades
-        </S.HeaderScrool>
-        <S.HeaderScrool
-          mobile={true}
-          onClick={() => handleScrollTo("portfolio")}
-          className={activeSection === "portfolio" ? "active" : ""}
-        >
-          Projetos
-        </S.HeaderScrool>
-        <S.HeaderScrool
-          mobile={true}
-          onClick={() => handleScrollTo("contact")}
-          className={activeSection === "contact" ? "active" : ""}
-        >
-          Contato
-        </S.HeaderScrool>
+      </S.LogoWrap>
+
+      <S.MobileToggle
+        aria-label="Abrir menu"
+        onClick={() => setIsMenuOpen((prev) => !prev)}
+      >
+        <span />
+        <span />
+        <span />
+      </S.MobileToggle>
+
+      <S.Navbar open={isMenuOpen}>
+        {navItems.map((item) => (
+          <S.HeaderScrool
+            key={item.id}
+            onClick={() => handleScrollTo(item.id)}
+            className={activeSection === item.id ? "active" : ""}
+          >
+            {item.label}
+          </S.HeaderScrool>
+        ))}
         <S.HeaderLink to={"/curriculum"}>Currículo</S.HeaderLink>
       </S.Navbar>
     </S.Header>
