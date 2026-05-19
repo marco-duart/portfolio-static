@@ -13,6 +13,7 @@ const Header: React.FC = () => {
   const navItems = [
     { id: "hero", label: "Inicio" },
     { id: "about", label: "Sobre" },
+    { id: "cases", label: "Cases" },
     { id: "profile", label: "Perfil" },
     { id: "skills", label: "Habilidades" },
     { id: "projects", label: "Projetos" },
@@ -45,7 +46,15 @@ const Header: React.FC = () => {
     }
 
     const handleScroll = () => {
-      const sections = ["hero", "about", "profile", "skills", "projects", "contact"];
+      const sections = [
+        "hero",
+        "about",
+        "cases",
+        "profile",
+        "skills",
+        "projects",
+        "contact",
+      ];
       const scrollPosition = window.scrollY + window.innerHeight / 2;
 
       for (const section of sections) {

@@ -2,7 +2,13 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
 import { useGetPortfolioItem, useUserBio } from "../../hooks";
-import { HeroSection, ProjectsMagazine, AboutSection } from "../../components/sections";
+import { successCases } from "../../data";
+import {
+  HeroSection,
+  ProjectsMagazine,
+  AboutSection,
+  SuccessCasesSection,
+} from "../../components/sections";
 import { Contact } from "./contact";
 import { Skills } from "./skills";
 import { Profile } from "./profile";
@@ -59,6 +65,10 @@ export const Home: React.FC = () => {
 
       <section id="about">
         <AboutSection user={user} />
+      </section>
+
+      <section id="cases">
+        <SuccessCasesSection cases={successCases} />
       </section>
 
       <section id="profile">
