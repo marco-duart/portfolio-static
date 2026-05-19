@@ -44,15 +44,21 @@ export const BioContent = styled.div`
 `;
 
 export const BioImage = styled.img`
-  width: 100%;
-  max-width: 300px;
+  width: min(100%, 260px);
+  max-width: 260px;
+  max-height: 220px;
   height: auto;
+  object-fit: contain;
+  object-position: center;
+  align-self: center;
   border-radius: ${props => props.theme.borderRadius.lg};
   box-shadow: ${props => props.theme.boxShadow.md};
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    flex: 0 0 35%;
-    max-width: 100%;
+    flex: 0 0 32%;
+    width: 100%;
+    max-width: 320px;
+    max-height: 260px;
   }
 `;
 
