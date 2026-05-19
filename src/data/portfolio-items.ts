@@ -358,7 +358,7 @@ export const portfolioItems = [
     description:
       "PathLink e a solucao definitiva para a gestao centralizada, estruturada e controlada de toda a documentacao de TI. Sua arquitetura foi projetada para escalabilidade, seguranca e interconexao de dados, permitindo que contas, variaveis de ambiente, repositorios e fluxos de trabalho sejam relacionados e rastreaveis por nivel de acesso.",
     technologies:
-      "REACT;TYPESCRIPT;DOCUMENTACAO;GESTAO-DE-ACESSO;WORKFLOW",
+      "@HOOKFORM/RESOLVERS;@STITCHES/REACT;@TANSTACK/REACT-TABLE;AXIOS;FRAMER-MOTION;REACT;REACT-DOM;REACT-EASY-CROP;REACT-HOOK-FORM;REACT-HOT-TOAST;REACT-ICONS;REACT-ROUTER-DOM;ZOD;@ESLINT/JS;@TYPES/NODE;@TYPES/REACT;@TYPES/REACT-DOM;@VITEJS/PLUGIN-REACT;ESLINT;ESLINT-PLUGIN-REACT-HOOKS;ESLINT-PLUGIN-REACT-REFRESH;GLOBALS;TYPESCRIPT;TYPESCRIPT-ESLINT;VITE",
     link: "https://github.com/marco-duart/path-link-client",
     photos: [
       {
@@ -390,7 +390,7 @@ export const portfolioItems = [
     description:
       "PathLink e a solucao definitiva para a gestao centralizada, estruturada e controlada de toda a documentacao de TI. Sua arquitetura foi projetada para escalabilidade, seguranca e interconexao de dados, permitindo que contas, variaveis de ambiente, repositorios e fluxos de trabalho sejam relacionados e rastreaveis por nivel de acesso.",
     technologies:
-      "NODE-JS;TYPESCRIPT;API;DOCUMENTACAO;GESTAO-DE-ACESSO",
+      "@NESTJS/COMMON;@NESTJS/CONFIG;@NESTJS/CORE;@NESTJS/JWT;@NESTJS/MAPPED-TYPES;@NESTJS/PASSPORT;@NESTJS/PLATFORM-EXPRESS;@NESTJS/SWAGGER;@NESTJS/TYPEORM;BCRYPT;CLASS-TRANSFORMER;CLASS-VALIDATOR;PASSPORT;PASSPORT-JWT;PG;REFLECT-METADATA;RXJS;TYPEORM;@NESTJS/CLI;@NESTJS/SCHEMATICS;@NESTJS/TESTING;@TYPES/BCRYPT;@TYPES/EXPRESS;@TYPES/JEST;@TYPES/NODE;@TYPES/SUPERTEST;@TYPESCRIPT-ESLINT/ESLINT-PLUGIN;@TYPESCRIPT-ESLINT/PARSER;ESLINT;ESLINT-CONFIG-PRETTIER;ESLINT-PLUGIN-PRETTIER;JEST;PRETTIER;SOURCE-MAP-SUPPORT;SUPERTEST;TS-JEST;TS-LOADER;TS-NODE;TSCONFIG-PATHS;TYPESCRIPT",
     link: "https://github.com/marco-duart/path-link-server",
     photos: [
       {
