@@ -92,11 +92,12 @@ export const ContactFlexContainer = styled.div`
 
 export const TextContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: row;
+  gap: 1.5rem;
   max-width: 100%;
 
   @media ${CONSTANTS.DEVICE.tablet} {
+    flex-direction: column;
     gap: 1.5rem;
     max-width: 60%;
   }
@@ -378,14 +379,12 @@ export const IconBlock = styled.a`
   cursor: pointer;
 
   div {
-    color: ${(props) => props.theme.colors.primary};
-    font-family: ${(props) => props.theme.fonts.poppins};
-    font-size: 1.25rem;
+    display: none;
   }
 
   ${StyledIconBase} {
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     color: ${(props) => props.theme.colors.primary};
   }
 
@@ -396,6 +395,9 @@ export const IconBlock = styled.a`
     }
 
     div {
+      display: block;
+      color: ${(props) => props.theme.colors.primary};
+      font-family: ${(props) => props.theme.fonts.poppins};
       font-size: 1.25rem;
     }
   }
