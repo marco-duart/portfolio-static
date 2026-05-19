@@ -50,8 +50,21 @@ export const experiences = [
   },
   {
     id: 5,
+    companyName: "Freelance · Autônomo",
+    role: "Engenheiro de Software & Consultor de TI",
+    startDate: new Date("2022-02-01T00:00:00-03:00"),
+    endDate: undefined,
+    description:
+      "Atuação como parceiro estratégico de tecnologia (B2B), oferecendo consultoria especializada e desenvolvimento de software sob medida para solucionar dores de negócios e otimizar processos; " +
+      "Análise de requisitos e desenho de arquiteturas escaláveis para modernização digital e criação de MVPs, com foco em custo-benefício e escolha tecnológica; " +
+      "Entrega de projetos ponta a ponta com Node.js, React, React Native e Ruby on Rails, da concepção ao deploy em produção; " +
+      "Desenvolvimento de sistemas web, APIs RESTful, aplicativos móveis e automações voltados a produtividade e inteligência de dados; " +
+      "Configuração e gestão de ambientes em nuvem com AWS e servidores dedicados, garantindo segurança e disponibilidade.",
+  },
+  {
+    id: 6,
     companyName: "Access Contact",
-    role: "Técnico de TI - Infra",
+    role: "Analista de TI",
     startDate: new Date("2022-03-18T00:00:00-03:00"),
     endDate: new Date("2022-06-20T00:00:00-03:00"),
     description:
@@ -60,7 +73,7 @@ export const experiences = [
       "Gestão de acessos.",
   },
   {
-    id: 6,
+    id: 7,
     companyName: "Ractek Tecnologia",
     role: "Supervisor",
     startDate: new Date("2022-06-22T00:00:00-03:00"),
@@ -72,7 +85,7 @@ export const experiences = [
       "Priorização de demandas conflitantes.",
   },
   {
-    id: 7,
+    id: 8,
     companyName: "Instituto Brasileiro de Coaching",
     role: "Analista de Monitoria",
     startDate: new Date("2022-08-21T00:00:00-03:00"),
@@ -83,9 +96,9 @@ export const experiences = [
       "Feedback e acompanhamento individual.",
   },
   {
-    id: 8,
+    id: 9,
     companyName: "Instituto Brasileiro de Coaching",
-    role: "Analista de Desenvolvimento Pleno",
+    role: "Desenvolvedor Full Stack",
     startDate: new Date("2023-10-01T00:00:00-03:00"),
     endDate: new Date("2025-07-01T00:00:00-03:00"),
     description:
@@ -101,9 +114,9 @@ export const experiences = [
       "Implementação de testes para maior test coverage.",
   },
   {
-    id: 9,
+    id: 10,
     companyName: "SuaMei",
-    role: "Analista de Desenvolvimento Pleno",
+    role: "Desenvolvedor Full Stack",
     startDate: new Date("2025-07-01T00:00:00-03:00"),
     endDate: new Date("2025-09-05T00:00:00-03:00"),
     description:
@@ -119,7 +132,7 @@ export const experiences = [
       "Implementação de testes para maior test coverage.",
   },
   {
-    id: 10,
+    id: 11,
     companyName: "Instituto Brasileiro de Coaching",
     role: "Coordenador de TI",
     startDate: new Date("2025-09-01T00:00:00-03:00"),

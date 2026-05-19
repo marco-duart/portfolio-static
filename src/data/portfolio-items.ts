@@ -2,6 +2,7 @@ export const portfolioItems = [
   {
     id: 1,
     name: "Mentor Class",
+    show: true,
     description:
       "Plataforma de mentorias onde o aluno e o mentor podem se conectar, agendando aulas.",
     technologies: "HTML;CSS;JAVASCRIPT",
@@ -40,6 +41,7 @@ export const portfolioItems = [
   {
     id: 2,
     name: "To Do List",
+    show: false,
     description: "To do list simples desenvolvida em react.",
     technologies: "REACT;VITE;JAVASCRIPT;TYPESCRIPT;STYLED-COMPONENTS",
     link: "https://github.com/marco-duart/To-Do.List",
@@ -61,6 +63,7 @@ export const portfolioItems = [
   {
     id: 3,
     name: "Buscar Medicos",
+    show: true,
     description:
       "Plataforma de vagas para área médica. Corporações anunciam suas vagas e médicos cadastram seus currículos e se candidatam a vagas.",
     technologies:
@@ -112,6 +115,7 @@ export const portfolioItems = [
   {
     id: 4,
     name: "CulturePower API",
+    show: true,
     description:
       "Este é um projeto de API para um sistema de premiação interna, desenvolvido em Node.js com o framework Express e utilizando MongoDB como banco de dados.",
     technologies: "NODE-JS;TYPESCRIPT;EXPRESS-JS;MONGO-DB;MONGOOSE;VITEST",
@@ -126,6 +130,7 @@ export const portfolioItems = [
   {
     id: 5,
     name: "Metavagas API",
+    show: true,
     description:
       "Este é um projeto de API para um sistema de oferta/procura de vagas, desenvolvido em Node.js com o framework NestJs e utilizando PostgreSQL como banco de dados.",
     technologies:
@@ -141,6 +146,7 @@ export const portfolioItems = [
   {
     id: 6,
     name: "Metavagas",
+    show: true,
     description:
       "Este é um projeto de Front para um sistema de oferta/procura de vagas, desenvolvido em javascript/typescript com a biblioteca React.",
     technologies:
@@ -164,6 +170,7 @@ export const portfolioItems = [
   {
     id: 7,
     name: "Portfolio Back",
+    show: true,
     description:
       "Este é um projeto de um servidor para um portfolio baseado em front e server. O projeto possui autenticação e um ambiente de administrador.",
     technologies:
@@ -179,6 +186,7 @@ export const portfolioItems = [
   {
     id: 8,
     name: "Portfolio Front",
+    show: true,
     description:
       "Este é um projeto de um front para um portfolio baseado em front e server. O projeto possui autenticação e um ambiente de administrador.",
     technologies:
@@ -242,6 +250,7 @@ export const portfolioItems = [
   {
     id: 9,
     name: "Porto Club Barbershop",
+    show: false,
     description:
       "Este projeto implementa um website de barbearia com foco em uma interface responsiva, transições suaves e uma navegação interativa baseada em rolagem.",
     technologies:
@@ -277,6 +286,7 @@ export const portfolioItems = [
   {
     id: 10,
     name: "Quali-Track Server",
+    show: false,
     description:
       "Este projeto implementa um sistema de acompanhamento e gestão de avaliações por equipe, permitindo controle completo de assinaturas, relatórios e monitorias de performance. Este é o repositório do servidor.",
     technologies:
@@ -292,6 +302,7 @@ export const portfolioItems = [
   {
     id: 11,
     name: "Quali-Track Web",
+    show: false,
     description:
       "Este projeto implementa um sistema de acompanhamento e gestão de avaliações por equipe, permitindo controle completo de assinaturas, relatórios e monitorias de performance. Este é o repositório da aplicação web.",
     technologies:
@@ -307,6 +318,7 @@ export const portfolioItems = [
   {
     id: 12,
     name: "Quali-Track Mobile",
+    show: false,
     description:
       "Este projeto implementa um sistema de acompanhamento e gestão de avaliações por equipe, permitindo controle completo de assinaturas, relatórios e monitorias de performance. Este é o repositório da aplicação mobile.",
     technologies:
@@ -316,6 +328,338 @@ export const portfolioItems = [
       {
         id: 47,
         photoUrl: "/assets/projects/new-project.png",
+      },
+    ],
+  },
+  {
+    id: 13,
+    name: "Print Hook",
+    show: true,
+    description:
+      "Sistema de impressao remota inteligente que recebe requisicoes via API e gerencia filas sequenciais para impressoras locais em eventos por todo o Brasil, com monitoramento, retry automatico e autenticacao JWT.",
+    technologies:
+      "NEST-JS;TYPESCRIPT;BULL;NODE-HTML-TO-IMAGE;PDFKIT;PASSPORT-JWT;HELMET;CORS;SWAGGER;JWT;WINDOWS;LINUX",
+    link: "https://github.com/marco-duart/print-hook",
+    photos: [
+      {
+        id: 48,
+        photoUrl: "/assets/projects/15/printhook.png",
+      },
+      {
+        id: 84,
+        photoUrl: "/assets/projects/15/printhook1.png",
+      },
+    ],
+  },
+  {
+    id: 14,
+    name: "Path Link Client",
+    show: true,
+    description:
+      "PathLink e a solucao definitiva para a gestao centralizada, estruturada e controlada de toda a documentacao de TI. Sua arquitetura foi projetada para escalabilidade, seguranca e interconexao de dados, permitindo que contas, variaveis de ambiente, repositorios e fluxos de trabalho sejam relacionados e rastreaveis por nivel de acesso.",
+    technologies:
+      "REACT;TYPESCRIPT;DOCUMENTACAO;GESTAO-DE-ACESSO;WORKFLOW",
+    link: "https://github.com/marco-duart/path-link-client",
+    photos: [
+      {
+        id: 49,
+        photoUrl: "/assets/projects/13/pathlink1.png",
+      },
+      {
+        id: 50,
+        photoUrl: "/assets/projects/13/pathlink2.png",
+      },
+      {
+        id: 51,
+        photoUrl: "/assets/projects/13/pathlink3.png",
+      },
+      {
+        id: 52,
+        photoUrl: "/assets/projects/13/pathlink4.png",
+      },
+      {
+        id: 53,
+        photoUrl: "/assets/projects/13/pathlink5.png",
+      },
+    ],
+  },
+  {
+    id: 15,
+    name: "Path Link Server",
+    show: true,
+    description:
+      "PathLink e a solucao definitiva para a gestao centralizada, estruturada e controlada de toda a documentacao de TI. Sua arquitetura foi projetada para escalabilidade, seguranca e interconexao de dados, permitindo que contas, variaveis de ambiente, repositorios e fluxos de trabalho sejam relacionados e rastreaveis por nivel de acesso.",
+    technologies:
+      "NODE-JS;TYPESCRIPT;API;DOCUMENTACAO;GESTAO-DE-ACESSO",
+    link: "https://github.com/marco-duart/path-link-server",
+    photos: [
+      {
+        id: 54,
+        photoUrl: "/assets/projects/14/pathlinkserver1.png",
+      },
+      {
+        id: 55,
+        photoUrl: "/assets/projects/14/pathlinkserver2.png",
+      },
+    ],
+  },
+  {
+    id: 16,
+    name: "Sinap Client",
+    show: true,
+    description:
+      "Aplicativo de acompanhamento de projetos com dashboard em tempo real para visualizar quem está no fluxo, como o trabalho está evoluindo e onde cada etapa acontece, priorizando organização, produtividade e insights acionáveis.",
+    technologies:
+      "REACT;VITE;TYPESCRIPT;REACT-ROUTER-DOM;REACT-HOOK-FORM;ZOD;AXIOS;TANSTACK-REACT-TABLE;DATE-FNS;DATE-FNS-TZ;REACT-HOT-TOAST;REACT-ICONS;STITCHES",
+    link: "https://github.com/marco-duart/sinap-client",
+    photos: [
+      {
+        id: 56,
+        photoUrl: "/assets/projects/16/sinapclient1.png",
+      },
+    ],
+  },
+  {
+    id: 17,
+    name: "Sinap API",
+    show: true,
+    description:
+      "API do ecossistema Sinap para acompanhamento de projetos, autenticação e gestão do fluxo de trabalho, servindo dados para dashboards em tempo real com foco em organização, produtividade e leitura rápida dos indicadores.",
+    technologies:
+      "NEST-JS;TYPESCRIPT;TYPE-ORM;POSTGRE-SQL;PASSPORT-JWT;BCRYPT;CLASS-VALIDATOR;CLASS-TRANSFORMER;SWAGGER;JEST",
+    link: "https://github.com/marco-duart/sinap-api",
+    photos: [
+      {
+        id: 57,
+        photoUrl: "/assets/projects/17/sinapapi1.png",
+      },
+    ],
+  },
+  {
+    id: 18,
+    name: "Talent Flow Front",
+    show: false,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 79,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 19,
+    name: "Talent Flow API",
+    show: false,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 80,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 20,
+    name: "Kaizen Flow Server",
+    show: false,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 81,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 21,
+    name: "Kaizen Flow Client",
+    show: false,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 82,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 22,
+    name: "Tech Raids Server",
+    show: true,
+    description:
+      "API de gamificação com narrativa RPG para equipes, com progressão de personagens, quests, bosses, títulos e recompensas. Sistema de gestão de guildas com dois perfis: character para colaboradores que evoluem e cumprem missões, e narrator para líderes que coordenam equipes e entregam recompensas.",
+    technologies:
+      "RUBY-ON-RAILS;POSTGRE-SQL;DEVISE;PUNDIT;DEVISE-TOKEN-AUTH;ACTIVE-STORAGE;IMAGE-PROCESSING;PAGY;RSWAG;SOLID-QUEUE;SOLID-CACHE",
+    link: "https://github.com/marco-duart/techraids-server",
+    photos: [
+      {
+        id: 83,
+        photoUrl: "/assets/projects/18/techraidsserver1.png",
+      },
+      {
+        id: 84,
+        photoUrl: "/assets/projects/18/techraidsserver2.png",
+      },
+    ],
+  },
+  {
+    id: 23,
+    name: "Tech Raids Client",
+    show: true,
+    description:
+      "Interface do sistema de gamificação RPG para equipes, com dashboards em tempo real, progressão de personagens, quests, bosses e recompensas. Oferece dois fluxos principais: para characters (colaboradores que evoluem e cumprem missões com visual imersivo) e para narrators (líderes que coordenam guildas e entregam recompensas).",
+    technologies:
+      "REACT;VITE;TYPESCRIPT;REACT-ROUTER-DOM;REACT-HOOK-FORM;ZOD;AXIOS;FRAMER-MOTION;STYLED-COMPONENTS;STYLED-ICONS;RECHARTS;REACT-HOT-TOAST;REACT-DATE-RANGE;REACT-EASY-CROP;REACT-ZOOM-PAN-PINCH",
+    link: "https://github.com/marco-duart/techraids-client",
+    photos: [
+      {
+        id: 58,
+        photoUrl: "/assets/projects/10/techraids1.jpeg",
+      },
+      {
+        id: 59,
+        photoUrl: "/assets/projects/10/techraids2.jpeg",
+      },
+      {
+        id: 60,
+        photoUrl: "/assets/projects/10/techraids3.jpeg",
+      },
+      {
+        id: 61,
+        photoUrl: "/assets/projects/10/techraids4.jpeg",
+      },
+      {
+        id: 62,
+        photoUrl: "/assets/projects/10/techraids5.jpeg",
+      },
+      {
+        id: 63,
+        photoUrl: "/assets/projects/10/techraids6.jpeg",
+      },
+      {
+        id: 64,
+        photoUrl: "/assets/projects/10/techraids7.jpeg",
+      },
+      {
+        id: 65,
+        photoUrl: "/assets/projects/10/techraids8.jpeg",
+      },
+      {
+        id: 66,
+        photoUrl: "/assets/projects/10/techraids9.jpeg",
+      },
+      {
+        id: 67,
+        photoUrl: "/assets/projects/10/techraids10.png",
+      },
+    ],
+  },
+  {
+    id: 24,
+    name: "Nexus Vibe Server",
+    show: false,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 68,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 25,
+    name: "Nexus Vibe Mobile",
+    show: false,
+    description:
+      "",
+    technologies:
+      "",
+    link: "",
+    photos: [
+      {
+        id: 69,
+        photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 26,
+    name: "Web Commerce",
+    show: true,
+    description:
+      "Ecommerce focado em vendas rapidas de produtos por landing pages, integrado com gateway de pagamento e GTM para acompanhamento de conversao e performance.",
+    technologies:
+      "REACT;VITE;TYPESCRIPT;REACT-ROUTER-DOM;REACT-HOOK-FORM;ZOD;AXIOS;STITCHES;GTM;DATE-FNS;DATE-FNS-TZ;REACT-ICONS;REACT-HOT-TOAST",
+    link: "https://github.com/marco-duart/web-commerce-client",
+    photos: [
+      {
+        id: 70,
+        photoUrl: "/assets/projects/11/webcommerce1.png",
+      },
+      {
+        id: 71,
+        photoUrl: "/assets/projects/11/webcommerce2.png",
+      },
+      {
+        id: 72,
+        photoUrl: "/assets/projects/11/webcommerce3.png",
+      },
+      {
+        id: 73,
+        photoUrl: "/assets/projects/11/webcommerce4.png",
+      },
+    ],
+  },
+  {
+    id: 27,
+    name: "Student Experience",
+    show: true,
+    description:
+      "Area do aluno com pedidos, turmas, ingressos, conteudo digital e outros recursos para acompanhamento completo da jornada do estudante.",
+    technologies:
+      "REACT;VITE;TYPESCRIPT;REACT-ROUTER-DOM;TANSTACK-REACT-QUERY;AXIOS;STITCHES;DND-KIT;DATE-FNS;DATE-FNS-TZ;LUCIDE-REACT;REACT-ICONS;REACT-HOT-TOAST;CLSX",
+    link: "https://github.com/marco-duart/student-experience-client",
+    photos: [
+      {
+        id: 74,
+        photoUrl: "/assets/projects/12/studentexperience1.png",
+      },
+      {
+        id: 75,
+        photoUrl: "/assets/projects/12/studentexperience2.png",
+      },
+      {
+        id: 76,
+        photoUrl: "/assets/projects/12/studentexperience3.png",
+      },
+      {
+        id: 77,
+        photoUrl: "/assets/projects/12/studentexperience4.png",
+      },
+      {
+        id: 78,
+        photoUrl: "/assets/projects/12/studentexperience5.png",
       },
     ],
   },

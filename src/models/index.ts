@@ -6,3 +6,4 @@ export * from "./resume";
 export * from "./skill";
 export * from "./user";
 export * from "./profile";
+export * from "./success-case";

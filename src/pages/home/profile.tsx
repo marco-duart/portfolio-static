@@ -1,6 +1,6 @@
 import * as S from "./styles";
 import * as CONSTANTS from "../../utils/constants/constants";
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 
 type ProfileData = {
   eneagram: {
@@ -31,129 +31,89 @@ type Props = {
 
 export const Profile: React.FC<Props> = ({ profileData }) => {
   const [activeProfile, setActiveProfile] = useState<
-    "eneagram" | "disc" | "personality16" | "temperaments" | null
-  >(null);
-  const [isMobile, setIsMobile] = useState(false);
+    "eneagram" | "disc" | "personality16" | "temperaments"
+  >("personality16");
 
-  useEffect(() => {
-    const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < CONSTANTS.SIZES.tablet);
-    };
+  const profileMap = useMemo(
+    () => ({
+      eneagram: {
+        label: "Eneagrama",
+        image: CONSTANTS.IMAGES.enneagram,
+        code: profileData?.eneagram.code || "",
+        name: profileData?.eneagram.name || "",
+        description: profileData?.eneagram.description || "",
+      },
+      disc: {
+        label: "DISC",
+        image: CONSTANTS.IMAGES.disc,
+        code: profileData?.disc.code || "",
+        name: profileData?.disc.name || "",
+        description: profileData?.disc.description || "",
+      },
+      personality16: {
+        label: "16 Personalidades",
+        image: CONSTANTS.IMAGES.personality,
+        code: profileData?.personality16.code || "",
+        name: profileData?.personality16.name || "",
+        description: profileData?.personality16.description || "",
+      },
+      temperaments: {
+        label: "Temperamentos",
+        image: CONSTANTS.IMAGES.temperament,
+        code: profileData?.temperaments.code || "",
+        name: profileData?.temperaments.name || "",
+        description: profileData?.temperaments.description || "",
+      },
+    }),
+    [profileData]
+  );
 
-    checkIfMobile();
-    window.addEventListener("resize", checkIfMobile);
-    return () => window.removeEventListener("resize", checkIfMobile);
-  }, []);
-
-  const handleProfileInteraction = (
-    profile: "eneagram" | "disc" | "personality16" | "temperaments"
-  ) => {
-    if (isMobile) {
-      setActiveProfile(activeProfile === profile ? null : profile);
-    } else {
-      setActiveProfile(profile);
-    }
-  };
-
-  const handleProfileLeave = () => {
-    if (!isMobile) {
-      setActiveProfile(null);
-    }
-  };
+  const current = profileMap[activeProfile];
 
   return (
-    <S.Container>
-      <S.Title style={{ marginBottom: "2rem" }}>Perfil</S.Title>
-      <S.ProfileGrid>
-        <S.ProfileCard
-          onClick={() => isMobile && handleProfileInteraction("eneagram")}
-          onMouseEnter={() => !isMobile && handleProfileInteraction("eneagram")}
-          onMouseLeave={handleProfileLeave}
-          active={activeProfile === "eneagram"}
-        >
-          <S.ProfileImageWrapper>
-            <S.ProfileImage src={CONSTANTS.IMAGES.enneagram} alt="Eneagrama" />
-          </S.ProfileImageWrapper>
-          <S.ProfileInfo active={activeProfile === "eneagram"}>
-            <S.ProfileName>{profileData?.eneagram.name}</S.ProfileName>
-            <S.ProfileCode>{profileData?.eneagram.code}</S.ProfileCode>
-            <S.ProfileDescription>
-              {profileData?.eneagram.description}
-            </S.ProfileDescription>
-          </S.ProfileInfo>
-        </S.ProfileCard>
+    <S.ProfileSection>
+      <S.Title style={{ marginBottom: "1.2rem" }}>Perfil</S.Title>
 
-        <S.ProfileCard
-          onClick={() => isMobile && handleProfileInteraction("disc")}
-          onMouseEnter={() => !isMobile && handleProfileInteraction("disc")}
-          onMouseLeave={handleProfileLeave}
-          active={activeProfile === "disc"}
-        >
-          <S.ProfileImageWrapper>
-            <S.ProfileImage src={CONSTANTS.IMAGES.disc} alt="DISC" />
-          </S.ProfileImageWrapper>
-          <S.ProfileInfo active={activeProfile === "disc"}>
-            <S.ProfileName>{profileData?.disc.name}</S.ProfileName>
-            <S.ProfileCode>{profileData?.disc.code}</S.ProfileCode>
-            <S.ProfileDescription>
-              {profileData?.disc.description}
-            </S.ProfileDescription>
-          </S.ProfileInfo>
-        </S.ProfileCard>
+      <S.ProfileTabs>
+        {(Object.keys(profileMap) as Array<keyof typeof profileMap>).map((key) => (
+          <S.ProfileTabButton
+            key={key}
+            active={activeProfile === key}
+            onClick={() => setActiveProfile(key)}
+          >
+            {profileMap[key].label}
+          </S.ProfileTabButton>
+        ))}
+      </S.ProfileTabs>
 
-        <S.ProfileCard
-          onClick={() => isMobile && handleProfileInteraction("personality16")}
-          onMouseEnter={() =>
-            !isMobile && handleProfileInteraction("personality16")
-          }
-          onMouseLeave={handleProfileLeave}
-          active={activeProfile === "personality16"}
-        >
-          <S.ProfileImageWrapper>
-            <S.ProfileImage
-              src={CONSTANTS.IMAGES.personality}
-              alt="16 Personalidades"
-            />
-          </S.ProfileImageWrapper>
-          <S.ProfileInfo active={activeProfile === "personality16"}>
-            <S.ProfileName>{profileData?.personality16.name}</S.ProfileName>
-            <S.ProfileCode>{profileData?.personality16.code}</S.ProfileCode>
-            <S.ProfileDescription>
-              {profileData?.personality16.description}
-            </S.ProfileDescription>
-          </S.ProfileInfo>
-        </S.ProfileCard>
+      <S.ProfileSpotlight>
+        <S.ProfileSpotlightVisual>
+          <S.ProfileHalo />
+          <S.ProfileSpotlightImage src={current.image} alt={current.label} />
+        </S.ProfileSpotlightVisual>
 
-        <S.ProfileCard
-          onClick={() => isMobile && handleProfileInteraction("temperaments")}
-          onMouseEnter={() =>
-            !isMobile && handleProfileInteraction("temperaments")
-          }
-          onMouseLeave={handleProfileLeave}
-          active={activeProfile === "temperaments"}
-        >
-          <S.ProfileImageWrapper>
-            <S.ProfileImage
-              src={CONSTANTS.IMAGES.temperament}
-              alt="Temperamentos"
-            />
-          </S.ProfileImageWrapper>
-          <S.ProfileInfo active={activeProfile === "temperaments"}>
-            <S.ProfileName>{profileData?.temperaments.name}</S.ProfileName>
-            <S.ProfileCode>{profileData?.temperaments.code}</S.ProfileCode>
-            <S.ProfileDescription>
-              {profileData?.temperaments.description}
-            </S.ProfileDescription>
-          </S.ProfileInfo>
-        </S.ProfileCard>
-      </S.ProfileGrid>
-      {!activeProfile && (
-        <S.TipText>
-          {isMobile
-            ? "Toque em um perfil para expandir"
-            : "Passe o mouse sobre um perfil para expandir"}
-        </S.TipText>
-      )}
-    </S.Container>
+        <S.ProfileSpotlightContent>
+          <S.ProfileMiniLabel>Leitura ativa</S.ProfileMiniLabel>
+          <S.ProfileMainTitle>{current.name}</S.ProfileMainTitle>
+          <S.ProfileMainCode>{current.code}</S.ProfileMainCode>
+          <S.ProfileMainDescription>{current.description}</S.ProfileMainDescription>
+
+          <S.ProfileMetrics>
+            <S.ProfileMetricCard>
+              <strong>{current.label}</strong>
+              <span>Base principal de traço</span>
+            </S.ProfileMetricCard>
+            <S.ProfileMetricCard>
+              <strong>Perfil Comportamental</strong>
+              <span>Leitura complementar de tomada de decisão</span>
+            </S.ProfileMetricCard>
+            <S.ProfileMetricCard>
+              <strong>Aplicacao no trabalho</strong>
+              <span>Comunicação, liderança e resolução de problemas</span>
+            </S.ProfileMetricCard>
+          </S.ProfileMetrics>
+        </S.ProfileSpotlightContent>
+      </S.ProfileSpotlight>
+    </S.ProfileSection>
   );
 };

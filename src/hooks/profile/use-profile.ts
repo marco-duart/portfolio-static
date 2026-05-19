@@ -7,6 +7,7 @@ import {
   Education,
   Experience,
 } from "../../models";
+import { sortExperiencesByTimeline } from "../../utils/helpers/sort-experiences";
 
 type State = {
   user: undefined | User;
@@ -33,7 +34,7 @@ export const useProfile = () => {
       user,
       resume,
       educations,
-      experiences,
+      experiences: sortExperiencesByTimeline(experiences),
       skills,
     }));
   };
