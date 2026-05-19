@@ -41,7 +41,7 @@ export const portfolioItems = [
   {
     id: 2,
     name: "To Do List",
-    show: true,
+    show: false,
     description: "To do list simples desenvolvida em react.",
     technologies: "REACT;VITE;JAVASCRIPT;TYPESCRIPT;STYLED-COMPONENTS",
     link: "https://github.com/marco-duart/To-Do.List",
@@ -250,7 +250,7 @@ export const portfolioItems = [
   {
     id: 9,
     name: "Porto Club Barbershop",
-    show: true,
+    show: false,
     description:
       "Este projeto implementa um website de barbearia com foco em uma interface responsiva, transições suaves e uma navegação interativa baseada em rolagem.",
     technologies:
@@ -338,7 +338,7 @@ export const portfolioItems = [
     description:
       "Sistema de impressao remota inteligente que recebe requisicoes via API e gerencia filas sequenciais para impressoras locais em eventos por todo o Brasil, com monitoramento, retry automatico e autenticacao JWT.",
     technologies:
-      "NODE-JS;TYPESCRIPT;REDIS;JWT;SWAGGER;REST-API;WINDOWS;LINUX",
+      "NEST-JS;TYPESCRIPT;BULL;NODE-HTML-TO-IMAGE;PDFKIT;PASSPORT-JWT;HELMET;CORS;SWAGGER;JWT;WINDOWS;LINUX",
     link: "https://github.com/marco-duart/print-hook",
     photos: [
       {
@@ -408,14 +408,14 @@ export const portfolioItems = [
     name: "Sinap Client",
     show: true,
     description:
-      "",
+      "Aplicativo de acompanhamento de projetos com dashboard em tempo real para visualizar quem está no fluxo, como o trabalho está evoluindo e onde cada etapa acontece, priorizando organização, produtividade e insights acionáveis.",
     technologies:
-      "",
-    link: "",
+      "REACT;VITE;TYPESCRIPT;REACT-ROUTER-DOM;REACT-HOOK-FORM;ZOD;AXIOS;TANSTACK-REACT-TABLE;DATE-FNS;DATE-FNS-TZ;REACT-HOT-TOAST;REACT-ICONS;STITCHES",
+    link: "https://github.com/marco-duart/sinap-client",
     photos: [
       {
         id: 56,
-        photoUrl: "",
+        photoUrl: "/assets/projects/16/sinapclient1.png",
       },
     ],
   },
@@ -424,21 +424,21 @@ export const portfolioItems = [
     name: "Sinap API",
     show: true,
     description:
-      "",
+      "API do ecossistema Sinap para acompanhamento de projetos, autenticação e gestão do fluxo de trabalho, servindo dados para dashboards em tempo real com foco em organização, produtividade e leitura rápida dos indicadores.",
     technologies:
-      "",
-    link: "",
+      "NEST-JS;TYPESCRIPT;TYPE-ORM;POSTGRE-SQL;PASSPORT-JWT;BCRYPT;CLASS-VALIDATOR;CLASS-TRANSFORMER;SWAGGER;JEST",
+    link: "https://github.com/marco-duart/sinap-api",
     photos: [
       {
         id: 57,
-        photoUrl: "",
+        photoUrl: "/assets/projects/17/sinapapi1.png",
       },
     ],
   },
   {
     id: 18,
     name: "Talent Flow Front",
-    show: true,
+    show: false,
     description:
       "",
     technologies:
@@ -454,7 +454,7 @@ export const portfolioItems = [
   {
     id: 19,
     name: "Talent Flow API",
-    show: true,
+    show: false,
     description:
       "",
     technologies:
@@ -504,14 +504,18 @@ export const portfolioItems = [
     name: "Tech Raids Server",
     show: true,
     description:
-      "",
+      "API de gamificação com narrativa RPG para equipes, com progressão de personagens, quests, bosses, títulos e recompensas. Sistema de gestão de guildas com dois perfis: character para colaboradores que evoluem e cumprem missões, e narrator para líderes que coordenam equipes e entregam recompensas.",
     technologies:
-      "",
-    link: "",
+      "RUBY-ON-RAILS;POSTGRE-SQL;DEVISE;PUNDIT;DEVISE-TOKEN-AUTH;ACTIVE-STORAGE;IMAGE-PROCESSING;PAGY;RSWAG;SOLID-QUEUE;SOLID-CACHE",
+    link: "https://github.com/marco-duart/techraids-server",
     photos: [
       {
         id: 83,
-        photoUrl: "",
+        photoUrl: "/assets/projects/18/techraidsserver1.png",
+      },
+      {
+        id: 84,
+        photoUrl: "/assets/projects/18/techraidsserver2.png",
       },
     ],
   },
@@ -520,10 +524,10 @@ export const portfolioItems = [
     name: "Tech Raids Client",
     show: true,
     description:
-      "",
+      "Interface do sistema de gamificação RPG para equipes, com dashboards em tempo real, progressão de personagens, quests, bosses e recompensas. Oferece dois fluxos principais: para characters (colaboradores que evoluem e cumprem missões com visual imersivo) e para narrators (líderes que coordenam guildas e entregam recompensas).",
     technologies:
-      "",
-    link: "",
+      "REACT;VITE;TYPESCRIPT;REACT-ROUTER-DOM;REACT-HOOK-FORM;ZOD;AXIOS;FRAMER-MOTION;STYLED-COMPONENTS;STYLED-ICONS;RECHARTS;REACT-HOT-TOAST;REACT-DATE-RANGE;REACT-EASY-CROP;REACT-ZOOM-PAN-PINCH",
+    link: "https://github.com/marco-duart/techraids-client",
     photos: [
       {
         id: 58,
@@ -606,7 +610,7 @@ export const portfolioItems = [
     description:
       "Ecommerce focado em vendas rapidas de produtos por landing pages, integrado com gateway de pagamento e GTM para acompanhamento de conversao e performance.",
     technologies:
-      "ECOMMERCE;LANDING-PAGE;GATEWAY-DE-PAGAMENTO;GTM",
+      "REACT;VITE;TYPESCRIPT;REACT-ROUTER-DOM;REACT-HOOK-FORM;ZOD;AXIOS;STITCHES;GTM;DATE-FNS;DATE-FNS-TZ;REACT-ICONS;REACT-HOT-TOAST",
     link: "https://github.com/marco-duart/web-commerce-client",
     photos: [
       {
@@ -634,7 +638,7 @@ export const portfolioItems = [
     description:
       "Area do aluno com pedidos, turmas, ingressos, conteudo digital e outros recursos para acompanhamento completo da jornada do estudante.",
     technologies:
-      "",
+      "REACT;VITE;TYPESCRIPT;REACT-ROUTER-DOM;TANSTACK-REACT-QUERY;AXIOS;STITCHES;DND-KIT;DATE-FNS;DATE-FNS-TZ;LUCIDE-REACT;REACT-ICONS;REACT-HOT-TOAST;CLSX",
     link: "https://github.com/marco-duart/student-experience-client",
     photos: [
       {
