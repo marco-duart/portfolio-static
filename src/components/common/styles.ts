@@ -10,10 +10,10 @@ export const Header = styled.header`
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: calc(100% - 1rem);
   max-width: 1200px;
-  min-height: 56px;
+  height: 56px;
   padding: 0.5rem 0.75rem;
   border: 1px solid ${(props) => props.theme.colors.primary}33;
   border-radius: ${(props) => props.theme.borderRadius.full};
@@ -24,15 +24,24 @@ export const Header = styled.header`
 
   @media ${CONSTANTS.DEVICE.md} {
     width: calc(100% - 2rem);
-    min-height: 64px;
+    height: 64px;
     padding: 0.5rem 1rem;
   }
 `;
 
 export const LogoWrap = styled.div`
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   align-items: center;
-  min-width: 44px;
+  min-width: auto;
+  flex-shrink: 0;
+
+  @media ${CONSTANTS.DEVICE.md} {
+    left: 1rem;
+  }
 `;
 
 export const MobileToggle = styled.button`
@@ -55,7 +64,7 @@ export const MobileToggle = styled.button`
     border-radius: 4px;
   }
 
-  @media ${CONSTANTS.DEVICE.md} {
+  @media ${CONSTANTS.DEVICE.lg} {
     display: none;
   }
 `;
@@ -75,7 +84,7 @@ export const Navbar = styled.nav<{ open: boolean }>`
   background: rgba(15, 52, 96, 0.95);
   backdrop-filter: blur(10px);
 
-  @media ${CONSTANTS.DEVICE.md} {
+  @media ${CONSTANTS.DEVICE.lg} {
     position: static;
     width: auto;
     margin: 0;
@@ -153,18 +162,19 @@ export const HeaderScrool = styled.button`
 // LOGO
 export const Logo = styled.div`
   display: block;
-  width: 34px;
-  height: 34px;
+  width: 110px;
+  height: 55px;
 
   @media ${CONSTANTS.DEVICE.md} {
-    width: 40px;
-    height: 40px;
+    width: 150px;
+    height: 75px;
   }
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center;
   }
 `;
 

@@ -140,12 +140,12 @@ export const HeroActions = styled.div`
   max-width: 300px;
 
   @media (min-width: ${props => props.theme.breakpoints.sm}) {
-    flex-direction: row;
+    flex-direction: column;
     width: auto;
   }
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
-    flex-direction: column;
+    flex-direction: row;
     max-width: 200px;
   }
 `;
