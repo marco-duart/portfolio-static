@@ -17,6 +17,7 @@ import {
   PortfolioItem,
   PortfolioPhoto,
 } from "../../models";
+import { sortExperiencesByTimeline } from "../../utils/helpers/sort-experiences";
 
 type State = {
   user: undefined | User;
@@ -46,7 +47,7 @@ export const useUserBio = () => {
       profile,
       skills,
       educations,
-      experiences,
+      experiences: sortExperiencesByTimeline(experiences),
       portfolioItems,
     }));
   };

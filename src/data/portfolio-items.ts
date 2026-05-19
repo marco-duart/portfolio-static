@@ -336,14 +336,18 @@ export const portfolioItems = [
     name: "Print Hook",
     show: true,
     description:
-      "PrintHook é uma solução robusta para automação de impressão em eventos itinerantes. Ele permite que sistemas em nuvem (VM GCP) enviem documentos para impressão em computadores locais.",
+      "Sistema de impressao remota inteligente que recebe requisicoes via API e gerencia filas sequenciais para impressoras locais em eventos por todo o Brasil, com monitoramento, retry automatico e autenticacao JWT.",
     technologies:
-      "",
-    link: "",
+      "NODE-JS;TYPESCRIPT;REDIS;JWT;SWAGGER;REST-API;WINDOWS;LINUX",
+    link: "https://github.com/marco-duart/print-hook",
     photos: [
       {
         id: 48,
-        photoUrl: "",
+        photoUrl: "/assets/projects/15/printhook.png",
+      },
+      {
+        id: 84,
+        photoUrl: "/assets/projects/15/printhook1.png",
       },
     ],
   },
@@ -352,14 +356,30 @@ export const portfolioItems = [
     name: "Path Link Client",
     show: true,
     description:
-      "",
+      "PathLink e a solucao definitiva para a gestao centralizada, estruturada e controlada de toda a documentacao de TI. Sua arquitetura foi projetada para escalabilidade, seguranca e interconexao de dados, permitindo que contas, variaveis de ambiente, repositorios e fluxos de trabalho sejam relacionados e rastreaveis por nivel de acesso.",
     technologies:
-      "",
-    link: "",
+      "REACT;TYPESCRIPT;DOCUMENTACAO;GESTAO-DE-ACESSO;WORKFLOW",
+    link: "https://github.com/marco-duart/path-link-client",
     photos: [
       {
         id: 49,
-        photoUrl: "",
+        photoUrl: "/assets/projects/13/pathlink1.png",
+      },
+      {
+        id: 50,
+        photoUrl: "/assets/projects/13/pathlink2.png",
+      },
+      {
+        id: 51,
+        photoUrl: "/assets/projects/13/pathlink3.png",
+      },
+      {
+        id: 52,
+        photoUrl: "/assets/projects/13/pathlink4.png",
+      },
+      {
+        id: 53,
+        photoUrl: "/assets/projects/13/pathlink5.png",
       },
     ],
   },
@@ -368,14 +388,18 @@ export const portfolioItems = [
     name: "Path Link Server",
     show: true,
     description:
-      "",
+      "PathLink e a solucao definitiva para a gestao centralizada, estruturada e controlada de toda a documentacao de TI. Sua arquitetura foi projetada para escalabilidade, seguranca e interconexao de dados, permitindo que contas, variaveis de ambiente, repositorios e fluxos de trabalho sejam relacionados e rastreaveis por nivel de acesso.",
     technologies:
-      "",
-    link: "",
+      "NODE-JS;TYPESCRIPT;API;DOCUMENTACAO;GESTAO-DE-ACESSO",
+    link: "https://github.com/marco-duart/path-link-server",
     photos: [
       {
-        id: 50,
-        photoUrl: "",
+        id: 54,
+        photoUrl: "/assets/projects/14/pathlinkserver1.png",
+      },
+      {
+        id: 55,
+        photoUrl: "/assets/projects/14/pathlinkserver2.png",
       },
     ],
   },
@@ -390,7 +414,7 @@ export const portfolioItems = [
     link: "",
     photos: [
       {
-        id: 51,
+        id: 56,
         photoUrl: "",
       },
     ],
@@ -406,7 +430,7 @@ export const portfolioItems = [
     link: "",
     photos: [
       {
-        id: 52,
+        id: 57,
         photoUrl: "",
       },
     ],
@@ -422,7 +446,7 @@ export const portfolioItems = [
     link: "",
     photos: [
       {
-        id: 53,
+        id: 79,
         photoUrl: "",
       },
     ],
@@ -438,7 +462,7 @@ export const portfolioItems = [
     link: "",
     photos: [
       {
-        id: 54,
+        id: 80,
         photoUrl: "",
       },
     ],
@@ -446,7 +470,7 @@ export const portfolioItems = [
   {
     id: 20,
     name: "Kaizen Flow Server",
-    show: true,
+    show: false,
     description:
       "",
     technologies:
@@ -454,7 +478,7 @@ export const portfolioItems = [
     link: "",
     photos: [
       {
-        id: 55,
+        id: 81,
         photoUrl: "",
       },
     ],
@@ -462,7 +486,7 @@ export const portfolioItems = [
   {
     id: 21,
     name: "Kaizen Flow Client",
-    show: true,
+    show: false,
     description:
       "",
     technologies:
@@ -470,7 +494,7 @@ export const portfolioItems = [
     link: "",
     photos: [
       {
-        id: 56,
+        id: 82,
         photoUrl: "",
       },
     ],
@@ -486,7 +510,7 @@ export const portfolioItems = [
     link: "",
     photos: [
       {
-        id: 57,
+        id: 83,
         photoUrl: "",
       },
     ],
@@ -503,7 +527,43 @@ export const portfolioItems = [
     photos: [
       {
         id: 58,
-        photoUrl: "",
+        photoUrl: "/assets/projects/10/techraids1.jpeg",
+      },
+      {
+        id: 59,
+        photoUrl: "/assets/projects/10/techraids2.jpeg",
+      },
+      {
+        id: 60,
+        photoUrl: "/assets/projects/10/techraids3.jpeg",
+      },
+      {
+        id: 61,
+        photoUrl: "/assets/projects/10/techraids4.jpeg",
+      },
+      {
+        id: 62,
+        photoUrl: "/assets/projects/10/techraids5.jpeg",
+      },
+      {
+        id: 63,
+        photoUrl: "/assets/projects/10/techraids6.jpeg",
+      },
+      {
+        id: 64,
+        photoUrl: "/assets/projects/10/techraids7.jpeg",
+      },
+      {
+        id: 65,
+        photoUrl: "/assets/projects/10/techraids8.jpeg",
+      },
+      {
+        id: 66,
+        photoUrl: "/assets/projects/10/techraids9.jpeg",
+      },
+      {
+        id: 67,
+        photoUrl: "/assets/projects/10/techraids10.png",
       },
     ],
   },
@@ -518,7 +578,7 @@ export const portfolioItems = [
     link: "",
     photos: [
       {
-        id: 59,
+        id: 68,
         photoUrl: "",
       },
     ],
@@ -534,8 +594,68 @@ export const portfolioItems = [
     link: "",
     photos: [
       {
-        id: 60,
+        id: 69,
         photoUrl: "",
+      },
+    ],
+  },
+  {
+    id: 26,
+    name: "Web Commerce",
+    show: true,
+    description:
+      "Ecommerce focado em vendas rapidas de produtos por landing pages, integrado com gateway de pagamento e GTM para acompanhamento de conversao e performance.",
+    technologies:
+      "ECOMMERCE;LANDING-PAGE;GATEWAY-DE-PAGAMENTO;GTM",
+    link: "https://github.com/marco-duart/web-commerce-client",
+    photos: [
+      {
+        id: 70,
+        photoUrl: "/assets/projects/11/webcommerce1.png",
+      },
+      {
+        id: 71,
+        photoUrl: "/assets/projects/11/webcommerce2.png",
+      },
+      {
+        id: 72,
+        photoUrl: "/assets/projects/11/webcommerce3.png",
+      },
+      {
+        id: 73,
+        photoUrl: "/assets/projects/11/webcommerce4.png",
+      },
+    ],
+  },
+  {
+    id: 27,
+    name: "Student Experience",
+    show: true,
+    description:
+      "Area do aluno com pedidos, turmas, ingressos, conteudo digital e outros recursos para acompanhamento completo da jornada do estudante.",
+    technologies:
+      "",
+    link: "https://github.com/marco-duart/student-experience-client",
+    photos: [
+      {
+        id: 74,
+        photoUrl: "/assets/projects/12/studentexperience1.png",
+      },
+      {
+        id: 75,
+        photoUrl: "/assets/projects/12/studentexperience2.png",
+      },
+      {
+        id: 76,
+        photoUrl: "/assets/projects/12/studentexperience3.png",
+      },
+      {
+        id: 77,
+        photoUrl: "/assets/projects/12/studentexperience4.png",
+      },
+      {
+        id: 78,
+        photoUrl: "/assets/projects/12/studentexperience5.png",
       },
     ],
   },
