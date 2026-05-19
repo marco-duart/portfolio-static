@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import * as S from "./about-section.styles";
 import { Accordion } from "./accordion";
 import { User } from "../../models";
