@@ -98,7 +98,8 @@ export const HeaderLink = styled(NavLink)`
   color: ${(props) => props.theme.colors.text};
   border-radius: ${(props) => props.theme.borderRadius.full};
   font-size: 0.92rem;
-  border: 1px solid transparent;
+  border: 0;
+  outline: none;
   transition: all 0.2s ease;
 
   &:hover,
@@ -118,29 +119,34 @@ export const HeaderScrool = styled.button`
   padding: 0.55rem 0.9rem;
   color: ${(props) => props.theme.colors.text};
   border-radius: ${(props) => props.theme.borderRadius.full};
-  border: 1px solid transparent;
+  border: 0;
   background: transparent;
   font-size: 0.92rem;
   font-family: ${(props) => props.theme.fonts.poppins};
+  appearance: none;
+  outline: none;
   cursor: pointer;
   transition: all 0.2s ease;
 
   &:hover,
   &.active {
     color: ${(props) => props.theme.colors.primary};
-    border-color: ${(props) => props.theme.colors.primary}66;
     background: ${(props) => props.theme.colors.backgroundSecondary};
+    box-shadow: inset 0 0 0 1px ${(props) => props.theme.colors.primary}66;
   }
 
   &.active {
     color: ${(props) => props.theme.colors.background};
-    border-color: transparent;
     background: linear-gradient(
       135deg,
       ${(props) => props.theme.colors.primary},
       ${(props) => props.theme.colors.accent}
     );
     box-shadow: ${(props) => props.theme.boxShadow.neon};
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px ${(props) => props.theme.colors.primary}99;
   }
 `;
 
